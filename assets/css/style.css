@@ -10,8 +10,22 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "rokkittbold";
+  src: url("fonts/rokkitt-bold-webfont.woff2") format("woff2"), url("fonts/rokkitt-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "rokkittregular";
+  src: url("fonts/rokkitt-regular-webfont.woff2") format("woff2"), url("fonts/rokkitt-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "rokkittregular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +55,120 @@ body {
 }
 
 .banner-left img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.banner-right {
+  padding: 140px 0 157px;
+  max-width: 50%;
+  width: 100%;
+}
+
+.banner-content {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#795198+0,582780+100 */
+  background: #795198;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#795198), to(#582780));
+  background: linear-gradient(to right, #795198 0%, #582780 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#795198', endColorstr='#582780',GradientType=1 );
+  /* IE6-9 */
+  border-right: 25px solid #fcd647;
+  padding: 65px 100px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.banner-content .logo {
+  position: relative;
+  padding: 0 0 25px;
+  margin: 0 0 25px;
+}
+
+.banner-content .logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  content: "";
+}
+
+.banner-content h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 3.3rem;
+  line-height: 48px;
+}
+
+.solution-left {
+  max-width: 55%;
+  width: 100%;
+  padding: 100px 50px;
+}
+
+.title-h2 {
+  color: #572680;
+  position: relative;
+  font-size: 3.3rem;
+  padding: 0 0 25px;
+  margin: 0 0 25px;
+  letter-spacing: 1px;
+}
+
+.title-h2::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #572680;
+  content: "";
+}
+
+.title-h3 {
+  color: #572680;
+  font-size: 2.5rem;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.solution-ul {
+  margin: 0;
+  padding: 0 0 30px 20px;
+}
+
+.solution-ul.last {
+  padding-bottom: 0;
+}
+
+.solution-ul li {
+  color: #572680;
+  font-size: 1.3rem;
+  padding: 0 0 0 10px;
+  font-weight: 800;
+  line-height: 21px;
+}
+
+.solution-right {
+  max-width: 45%;
+  width: 100%;
+}
+
+.solution-right img {
   max-width: 100%;
   height: 100%;
 }
