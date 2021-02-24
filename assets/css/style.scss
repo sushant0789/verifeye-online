@@ -104,9 +104,24 @@ body {
   }
 }
 
-.solution-left {
+.left-55 {
   max-width: 55%;
   width: 100%;
+}
+.right-45 {
+  max-width: 45%;
+  width: 100%;
+}
+.left-45 {
+  max-width: 45%;
+  width: 100%;
+}
+.right-55 {
+  max-width: 55%;
+  width: 100%;
+}
+
+.solution-left {
   padding: 100px 50px 0;
 }
 .title-h2 {
@@ -150,8 +165,6 @@ body {
   }
 }
 .solution-right {
-  max-width: 45%;
-  width: 100%;
   img {
     max-width: 100%;
     height: 100%;
@@ -159,16 +172,12 @@ body {
 }
 
 .verification-left {
-  max-width: 45%;
-  width: 100%;
   img {
     max-width: 100%;
     height: 100%;
   }
 }
 .verification-right {
-  max-width: 55%;
-  width: 100%;
   padding: 150px 0 0 100px;
   position: relative;
   overflow: hidden;
@@ -230,8 +239,6 @@ body {
   z-index: 1;
 }
 .verification-solution-left {
-  max-width: 55%;
-  width: 100%;
   background-color: #0092ab;
   padding: 160px 120px 0 120px;
   h2 {
@@ -253,8 +260,6 @@ body {
   }
 }
 .verification-solution-right {
-  max-width: 45%;
-  width: 100%;
   position: relative;
   img {
     max-width: 100%;
@@ -313,8 +318,6 @@ body {
 }
 
 .document-validation-left {
-  max-width: 55%;
-  width: 100%;
   padding: 220px 70px 70px;
   .title-h2 {
     width: 60%;
@@ -352,8 +355,6 @@ body {
   }
 }
 .document-validation-right {
-  max-width: 45%;
-  width: 100%;
   position: relative;
   img {
     max-width: 100%;
@@ -416,8 +417,6 @@ body {
 }
 
 .clear-dashboard-left {
-  max-width: 55%;
-  width: 100%;
   padding: 140px 70px 0;
   .title-h2 {
     width: 50%;
@@ -438,8 +437,6 @@ body {
   }
 }
 .clear-dashboard-right {
-  max-width: 45%;
-  width: 100%;
   background-color: #0092ab;
   position: relative;
   z-index: 0;
@@ -451,5 +448,63 @@ body {
     z-index: 1;
     max-width: auto;
     height: 65px;
+  }
+}
+
+.save-data-left {
+  padding: 150px 100px;
+  .title-h2 {
+    width: 50%;
+  }
+  .title-h5 {
+    width: 70%;
+    padding: 25px 0 0;
+  }
+}
+.save-data-right {
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.advance-check-left {
+  width: 100%;
+  max-width: 80%;
+  padding: 150px 0;
+  .title-h2 {
+    width: 34%;
+  }
+}
+.advance-check-right {
+  width: 100%;
+  max-width: 20%;
+  background-color: #572680;
+  position: relative;
+  .verifeye-icon {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 1;
+    max-width: auto;
+    height: 65px;
+  }
+  .white-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 35px;
+    content: "";
+    background-color: #fff;
+  }
+  .yellow-box {
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    z-index: 1;
+    padding: 20px;
+    content: "";
+    background-color: #fcd647;
   }
 }
