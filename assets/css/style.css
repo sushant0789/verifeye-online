@@ -365,4 +365,96 @@ body {
   color: #572680;
   font-weight: 800;
 }
+
+.document-validation-left {
+  max-width: 55%;
+  width: 100%;
+  padding: 220px 70px 70px;
+}
+
+.document-validation-left .title-h2 {
+  width: 60%;
+}
+
+.document-validation-right {
+  max-width: 45%;
+  width: 100%;
+  position: relative;
+}
+
+.document-validation-right img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.document-validation-right .verifeye-icon {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 1;
+  max-width: auto;
+  height: 65px;
+}
+
+.result {
+  border: 3px solid #fff;
+  padding: 35px;
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+  right: 70px;
+  z-index: 1;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 22px;
+}
+
+.result h3 {
+  font-size: 2.2rem;
+  margin: 0;
+  padding: 0 0 20px;
+}
+
+.title-h5 {
+  font-size: 1.2rem;
+  color: #572680;
+  width: 67%;
+  margin: 0;
+  padding: 50px 0 60px;
+}
+
+.document-validation-ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.document-validation-ul li {
+  border: 2px solid #572680;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 110px;
+  width: 110px;
+  font-size: 1rem;
+  color: #572680;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 18px;
+  padding: 0 15px;
+}
 /*# sourceMappingURL=style.css.map */
