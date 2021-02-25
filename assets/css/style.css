@@ -810,4 +810,20 @@ body {
   color: #572680;
   font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 767px) {
+  .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-left,
+  .banner-right {
+    max-width: none;
+  }
+  .banner-right {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
