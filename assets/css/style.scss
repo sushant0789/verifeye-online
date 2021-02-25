@@ -633,14 +633,51 @@ body {
 }
 
 .who-we-are-left {
-  padding: 150px 100px;
+  padding: 150px 100px 0;
   .title-h2 {
     width: 30%;
   }
 }
-.who-we-are-right {
+.who-we-are-right,
+.contact-top-right {
   img {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+.contact-top-left {
+  padding: 150px 100px 0;
+  .title-h5 {
+    width: 40%;
+    font-weight: normal;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+
+.contact-bottom-left {
+  width: 100%;
+  max-width: 70%;
+  padding: 30px;
+}
+.contact-bottom-right {
+  background-color: #572680;
+  width: 100%;
+  max-width: 30%;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding: 25px 70px;
+  .title-h3 {
+    width: 70%;
+  }
+  a {
+    color: #572680;
+    font-size: 1.2rem;
   }
 }

@@ -735,15 +735,61 @@ body {
 }
 
 .who-we-are-left {
-  padding: 150px 100px;
+  padding: 150px 100px 0;
 }
 
 .who-we-are-left .title-h2 {
   width: 30%;
 }
 
-.who-we-are-right img {
+.who-we-are-right img,
+.contact-top-right img {
   width: 100%;
   max-width: 100%;
+}
+
+.contact-top-left {
+  padding: 150px 100px 0;
+}
+
+.contact-top-left .title-h5 {
+  width: 40%;
+  font-weight: normal;
+}
+
+.contact-top-left .title-h5 a {
+  font-weight: bold;
+}
+
+.contact-bottom-left {
+  width: 100%;
+  max-width: 70%;
+  padding: 30px;
+}
+
+.contact-bottom-right {
+  background-color: #572680;
+  width: 100%;
+  max-width: 30%;
+}
+
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  padding: 25px 70px;
+}
+
+.contact-list .title-h3 {
+  width: 70%;
+}
+
+.contact-list a {
+  color: #572680;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
