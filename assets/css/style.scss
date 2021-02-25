@@ -322,7 +322,7 @@ body {
 }
 
 .document-validation-left {
-  padding: 220px 70px 70px;
+  padding: 220px 70px 0 70px;
   .title-h2 {
     width: 60%;
   }
@@ -695,4 +695,7 @@ body {
     color: #572680;
     font-size: 1.2rem;
   }
+}
+
+@media only screen and (max-width: 767px) {
 }

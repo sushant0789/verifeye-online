@@ -374,7 +374,7 @@ body {
 }
 
 .document-validation-left {
-  padding: 220px 70px 70px;
+  padding: 220px 70px 0 70px;
 }
 
 .document-validation-left .title-h2 {
