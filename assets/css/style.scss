@@ -235,7 +235,7 @@ body {
 }
 .verification-solution-number {
   color: #fff;
-  font-size: 600;
+  font-size: 600px;
   bottom: -320px;
   left: 120px;
   font-weight: 800;
@@ -281,7 +281,7 @@ body {
 
 .verification-process-content {
   padding: 150px 120px;
-  h2 {
+  .title-h2 {
     width: 30%;
     line-height: 48px;
     padding-bottom: 50px;
@@ -702,10 +702,162 @@ body {
     flex-direction: column;
   }
   .banner-left,
-  .banner-right {
+  .banner-right,
+  .left-55,
+  .left-45,
+  .right-45,
+  .right-55 {
     max-width: none;
   }
   .banner-right {
     padding: 0;
+  }
+  .banner-content {
+    padding: 40px 50px 100px 30px;
+    h1 {
+      font-size: 2rem;
+      line-height: 36px;
+    }
+  }
+  .solution-left,
+  .verification-right,
+  .verification-solution-left,
+  .verification-process-content,
+  .document-validation-left,
+  .validation-security-features-left,
+  .clear-dashboard-left,
+  .save-data-left,
+  .advance-check-left,
+  .innovative-product-features,
+  .online-gaming-left,
+  .who-we-are-left,
+  .contact-top-left {
+    padding: 40px 30px;
+    max-width: none;
+    .title-h2 {
+      padding: 0 0 25px;
+      width: 100%;
+    }
+  }
+  .title-h2 {
+    font-size: 2.4rem;
+  }
+  .title-h3 {
+    font-size: 2rem;
+  }
+  .verification-ol {
+    padding: 20px 0;
+  }
+  .verification-solution-number {
+    font-size: 200px;
+    bottom: -100px;
+    left: 10%;
+  }
+  .verification-process-blocks {
+    flex-direction: column;
+    width: 100%;
+    .col-md-4 {
+      width: 100%;
+      padding: 0 0 30px;
+    }
+  }
+  .title-h4 {
+    padding: 0 0 15px;
+  }
+  .title-h5 {
+    padding: 10px 0 25px;
+  }
+  .document-validation-ul {
+    padding: 0 0 20px;
+    width: 100%;
+    li {
+      height: 80px;
+      width: 80px;
+      font-size: 1.1rem;
+    }
+  }
+  .result {
+    left: 30px;
+    right: 30px;
+    bottom: 40px;
+  }
+  .validation-security-features-left .title-h5 {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .validation-security-features-right,
+  .save-data-left .title-h5,
+  .who-we-are-left .title-h5,
+  .contact-bottom-left,
+  .contact-bottom-right {
+    max-width: none;
+    width: 100%;
+  }
+  .clear-dashboard-right {
+    min-height: auto;
+    padding: 0 0 100%;
+  }
+  #clear-dashboard .dashboard {
+    left: 0;
+    right: 0;
+  }
+  .advance-check-left .title-h2 {
+    margin: 0 0 20px;
+  }
+  .advance-check-blocks {
+    flex-direction: column;
+  }
+  .block-40 {
+    padding: 30px 20px;
+    .title-h4 {
+      font-size: 1.8rem;
+    }
+  }
+  .advance-check-right {
+    display: none;
+  }
+  .advance-check-ul li {
+    padding: 0 0 0 10px;
+  }
+  .innovative-product-features .title-h2 {
+    padding-top: 100px;
+  }
+  .innovative-product-features-ul li {
+    width: 100%;
+    padding: 0 0 25px 40px;
+    position: relative;
+    span {
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
+  }
+  .online-gaming-right {
+    background-color: #572680;
+    padding-bottom: 200px;
+    .result {
+      top: 130px;
+      left: 30px;
+      right: 30px;
+      padding: 25px;
+    }
+  }
+  .online-gaming-right-ul {
+    left: 60px;
+    bottom: 30px;
+  }
+  .contact-list {
+    padding: 0;
+    flex-direction: column;
+    div {
+      padding: 0 0 25px;
+    }
+  }
+  .contact-bottom-right {
+    height: 100px;
+    .logo {
+      bottom: 30px;
+      right: 30px;
+    }
   }
 }
