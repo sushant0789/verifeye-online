@@ -56,7 +56,6 @@ body {
 
 .banner-left img {
   max-width: 100%;
-  height: 100%;
 }
 
 .banner-right {
@@ -81,7 +80,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -190,12 +188,10 @@ body {
 
 .solution-right img {
   max-width: 100%;
-  height: 100%;
 }
 
 .verification-left img {
   max-width: 100%;
-  height: 100%;
 }
 
 .verification-right {
@@ -303,7 +299,6 @@ body {
 
 .verification-solution-right img {
   max-width: 100%;
-  height: 100%;
 }
 
 .verification-solution-right .verifeye-icon {
@@ -430,7 +425,6 @@ body {
 
 .document-validation-right img {
   max-width: 100%;
-  height: 100%;
 }
 
 .document-validation-right .verifeye-icon {
@@ -482,7 +476,6 @@ body {
 
 .validation-security-features-right img {
   max-width: 100%;
-  height: 100%;
 }
 
 .validation-security-features-bottom {
@@ -712,7 +705,6 @@ body {
 
 .online-gaming-right img {
   max-width: 100%;
-  height: 100%;
 }
 
 .online-gaming-right .verifeye-icon {
