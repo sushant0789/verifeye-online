@@ -96,7 +96,7 @@ body {
       content: "";
     }
     img {
-      max-width: 100%;
+      max-width: 512px;
       width: 100%;
     }
   }
@@ -756,15 +756,18 @@ body {
       width: 100%;
     }
   }
-  .advance-check-left .title-h2 {
-    width: 80%;
-    margin-left: 40px;
+  .advance-check-left {
+    padding-left: 0;
+    .title-h2 {
+      width: 80%;
+      margin-left: 30px;
+    }
   }
   .block-40 {
-    padding: 40px 30px 30px;
+    padding: 40px;
   }
   .advance-check-ul li {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 15px;
   }
   .innovative-product-features .title-h2 {
     padding-top: 100px;
@@ -838,6 +841,102 @@ body {
   #clear-dashboard .dashboard {
     left: 0;
     right: 0;
+  }
+  .verification-right .title-h2 {
+    padding: 0 0 30px;
+    margin: 0;
+  }
+  .verification-solution-number {
+    font-size: 400px;
+    bottom: -220px;
+  }
+  .verification-process-blocks .col-md-4 {
+    width: 30%;
+  }
+  .title-h5 {
+    padding: 10px 0 25px;
+  }
+  .document-validation-ul {
+    padding: 0 0 20px;
+    width: 100%;
+    li {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .document-validation-left {
+    padding-bottom: 0;
+  }
+  .validation-security-features-left {
+    .title-h5 {
+      padding-bottom: 0;
+    }
+    .title-h2 {
+      width: 100%;
+    }
+  }
+  .save-data-left .title-h2,
+  .who-we-are-left .title-h2 {
+    width: 100%;
+  }
+  .advance-check-left {
+    padding-left: 0;
+    .title-h2 {
+      width: 80%;
+      margin-left: 50px;
+    }
+  }
+  .block-40 {
+    padding: 40px;
+    .title-h4 {
+      font-size: 2rem;
+    }
+  }
+  .advance-check-ul li {
+    padding-left: 15px;
+  }
+  .innovative-product-features .title-h2 {
+    padding-top: 100px;
+  }
+  .innovative-product-features-ul li {
+    vertical-align: text-top;
+    position: relative;
+    padding: 0 15px 25px 40px;
+    width: 48%;
+    span {
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
+  }
+  .online-gaming-right {
+    background-color: #572680;
+    padding-bottom: 200px;
+    .result {
+      top: 130px;
+      left: 30px;
+      right: 30px;
+      padding: 25px;
+    }
+  }
+  .online-gaming-right-ul {
+    left: 60px;
+  }
+  .contact-top-left {
+    padding-bottom: 0;
+    .title-h5 {
+      padding: 20px 0;
+    }
+  }
+  .contact-list {
+    padding: 40px 0 0 20px;
+    width: 100%;
+  }
+  .who-we-are-left {
+    padding-bottom: 0;
+  }
+  .contact-top-left .title-h5 {
+    width: 55%;
   }
 }
 
