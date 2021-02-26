@@ -648,6 +648,7 @@ body {
     font-weight: normal;
     a {
       font-weight: bold;
+      color: #572680;
     }
   }
 }
@@ -686,6 +687,33 @@ body {
     color: #572680;
     font-size: 1.2rem;
   }
+}
+
+.solution-right,
+.verification-left,
+.verification-solution-right,
+.document-validation-right,
+.validation-security-features-right,
+.save-data-right,
+.online-gaming-right,
+.who-we-are-right,
+.contact-top-right,
+.banner-left {
+  display: flex;
+}
+
+.banner-left img,
+.solution-right img,
+.verification-left img,
+.verification-solution-right img,
+.document-validation-right img,
+.validation-security-features-right img,
+.validation-security-features-bottom img,
+.save-data-right img,
+.online-gaming-right img,
+.who-we-are-right img,
+.contact-top-right img {
+  display: block;
 }
 
 /* Responsive Media Queries */
