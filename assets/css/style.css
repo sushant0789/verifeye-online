@@ -811,6 +811,149 @@ body {
   font-size: 1.2rem;
 }
 
+/* Responsive Media Queries */
+/* For Ipad */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .banner-content {
+    padding: 65px 80px 80px;
+  }
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+  .solution-left,
+  .verification-right,
+  .verification-solution-left,
+  .verification-process-content,
+  .document-validation-left,
+  .validation-security-features-left,
+  .save-data-left,
+  .advance-check-left,
+  .innovative-product-features,
+  .online-gaming-left,
+  .who-we-are-left,
+  .contact-top-left {
+    padding: 50px 30px;
+  }
+  .verification-right .title-h2 {
+    padding: 0 0 30px;
+  }
+  .verification-ol {
+    padding: 20px 0 0;
+  }
+  .verification-solution-number {
+    font-size: 400px;
+    bottom: -220px;
+  }
+  .verification-process-blocks .col-md-4 {
+    width: 30%;
+  }
+  .document-validation-ul {
+    width: 100%;
+  }
+  .result {
+    left: 50px;
+    right: 50px;
+  }
+  .validation-security-features-left {
+    max-width: 60%;
+    padding-bottom: 0;
+  }
+  .validation-security-features-right {
+    max-width: 40%;
+  }
+  #clear-dashboard .dashboard {
+    left: 0;
+    right: 0;
+  }
+  .save-data-left {
+    padding-bottom: 0;
+  }
+  .save-data-left .title-h2 {
+    width: 100%;
+  }
+  .advance-check-left .title-h2 {
+    width: 80%;
+    margin-left: 40px;
+  }
+  .block-40 {
+    padding: 40px 30px 30px;
+  }
+  .advance-check-ul li {
+    padding: 0 0 0 10px;
+  }
+  .innovative-product-features .title-h2 {
+    padding-top: 100px;
+  }
+  .innovative-product-features-ul li {
+    vertical-align: text-top;
+    position: relative;
+    padding: 0 15px 25px 40px;
+    width: 48%;
+  }
+  .innovative-product-features-ul li span {
+    position: absolute;
+    top: -2px;
+    left: 0;
+  }
+  .online-gaming-right {
+    background-color: #572680;
+    padding-bottom: 200px;
+  }
+  .online-gaming-right .result {
+    top: 130px;
+    left: 30px;
+    right: 30px;
+    padding: 25px;
+  }
+  .online-gaming-right-ul {
+    left: 60px;
+  }
+  .who-we-are-left .title-h2 {
+    width: 80%;
+  }
+  .who-we-are-left .title-h5 {
+    width: 80%;
+    padding: 20px 0;
+  }
+  .contact-top-left {
+    padding-bottom: 0;
+  }
+  .contact-top-left .title-h5 {
+    padding: 20px 0;
+  }
+  .contact-list {
+    padding: 40px 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
+  .banner-content {
+    padding: 65px 80px 80px;
+  }
+  .banner-content h1 {
+    font-size: 3rem;
+  }
+  .solution-left,
+  .verification-right,
+  .verification-solution-left,
+  .verification-process-content,
+  .document-validation-left,
+  .validation-security-features-left,
+  .save-data-left,
+  .advance-check-left,
+  .innovative-product-features,
+  .online-gaming-left,
+  .who-we-are-left,
+  .contact-top-left {
+    padding: 50px;
+  }
+  #clear-dashboard .dashboard {
+    left: 0;
+    right: 0;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .container .row {
     -webkit-box-orient: vertical;
