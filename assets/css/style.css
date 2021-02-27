@@ -30,6 +30,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1170px;
@@ -108,7 +117,7 @@ body {
 }
 
 .banner-content .logo img {
-  max-width: 512px;
+  max-width: 240px;
   width: 100%;
 }
 
@@ -185,7 +194,6 @@ body {
   color: #572680;
   font-size: 1.3rem;
   padding: 0 0 0 10px;
-  font-weight: 800;
   line-height: 21px;
 }
 
@@ -228,16 +236,19 @@ body {
   color: #572680;
   font-size: 1.3rem;
   padding: 0 0 30px 50px;
-  font-weight: 800;
   line-height: 21px;
   position: relative;
   list-style: none;
 }
 
+.verification-ol li:nth-child(n + 2) {
+  width: 85%;
+}
+
 .verification-ol li span {
   position: absolute;
   left: 0;
-  font: bold 18px sans-serif;
+  font: bold 18px;
   text-align: center;
   color: #fff;
   line-height: 18px;
@@ -281,6 +292,7 @@ body {
   color: #fff;
   line-height: 48px;
   margin: 20px 0 40px;
+  width: 90%;
 }
 
 .verification-solution-left .play-btn {
@@ -361,14 +373,15 @@ body {
   color: #572680;
   line-height: 32px;
   margin: 0;
-  padding: 0 0 30px;
+  padding: 0 0 25px;
   width: 80%;
 }
 
 .verification-process-para {
   font-size: 1.2rem;
   color: #572680;
-  font-weight: 800;
+  width: 85%;
+  line-height: 20px;
 }
 
 .document-validation-left {
@@ -415,7 +428,6 @@ body {
   width: 110px;
   font-size: 1rem;
   color: #572680;
-  font-weight: 800;
   text-align: center;
   font-size: 1.2rem;
   line-height: 18px;
@@ -799,7 +811,7 @@ body {
 }
 
 .contact-list .title-h3 {
-  width: 70%;
+  line-height: 30px;
 }
 
 .contact-list a {
