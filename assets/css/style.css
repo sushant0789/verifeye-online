@@ -1270,7 +1270,6 @@ h6 {
   .who-we-are-right,
   .contact-top-right,
   .banner-left {
-    display: inline;
     float: left;
   }
   .title-h2 {
