@@ -1142,7 +1142,7 @@ h6 {
   .navbar .logo {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    padding: 12px 15px 10px;
+    padding: 14px 15px 8px;
     display: inline;
   }
   .navbar .logo img {
