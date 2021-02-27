@@ -47,7 +47,7 @@ h6 {
   z-index: 99;
 }
 
-.navbar a {
+#nav a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -57,12 +57,15 @@ h6 {
   font-size: 20px;
 }
 
-.navbar a:hover,
-.navbar a:active,
-.navbar a:focus,
-.navbar a.active {
+#nav a:hover,
+#nav a:active,
+#nav a:focus,
+#nav a.active {
   background: #fff;
   color: #572680;
+}
+.mobile-menu {
+  display: none;
 }
 .container {
   padding: 0 15px;
@@ -778,7 +781,7 @@ h6 {
   .online-gaming-left,
   .who-we-are-left,
   .contact-top-left {
-    padding: 50px 30px;
+    padding: 80px 30px 30px;
   }
   .verification-right .title-h2 {
     padding: 0 0 30px;
@@ -901,7 +904,7 @@ h6 {
   .online-gaming-left,
   .who-we-are-left,
   .contact-top-left {
-    padding: 50px;
+    padding: 80px 50px 30px;
   }
   #clear-dashboard .dashboard {
     left: 0;
@@ -1006,6 +1009,51 @@ h6 {
 }
 
 @media only screen and (max-width: 767px) {
+  #nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: inline-block;
+    align-self: flex-end;
+    padding: 15px 15px 10px;
+  }
+  .toggle {
+    font-size: 30px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #572680;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
+  #banner {
+    padding: 60px 0 0;
+  }
   .container .row {
     flex-direction: column;
   }
@@ -1040,7 +1088,7 @@ h6 {
   .online-gaming-left,
   .who-we-are-left,
   .contact-top-left {
-    padding: 40px 30px;
+    padding: 80px 30px 30px 30px;
     max-width: none;
     .title-h2 {
       padding: 0 0 25px;
