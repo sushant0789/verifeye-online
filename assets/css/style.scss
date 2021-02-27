@@ -744,21 +744,8 @@ h6 {
 .contact-top-right,
 .banner-left {
   display: flex;
+  flex-direction: column;
 }
-
-/* .banner-left img,
-.solution-right img,
-.verification-left img,
-.verification-solution-right img,
-.document-validation-right img,
-.validation-security-features-right img,
-.validation-security-features-bottom img,
-.save-data-right img,
-.online-gaming-right img,
-.who-we-are-right img,
-.contact-top-right img {
-  display: block;
-} */
 
 /* Responsive Media Queries */
 
@@ -1114,30 +1101,7 @@ h6 {
       width: 100%;
     }
   }
-  .banner-left img,
-  .solution-right img,
-  .verification-left img,
-  .verification-solution-right img,
-  .document-validation-right img,
-  .validation-security-features-right img,
-  .validation-security-features-bottom img,
-  .save-data-right img,
-  .online-gaming-right img,
-  .who-we-are-right img,
-  .contact-top-right img,
-  .solution-right,
-  .verification-left,
-  .verification-solution-right,
-  .document-validation-right,
-  .validation-security-features-right,
-  .save-data-right,
-  .online-gaming-right,
-  .who-we-are-right,
-  .contact-top-right,
-  .banner-left {
-    display: inline;
-    float: left;
-  }
+
   .title-h2 {
     font-size: 2.4rem;
     line-height: 36px !important;
