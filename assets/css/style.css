@@ -1247,6 +1247,19 @@ h6 {
     padding: 0 0 25px;
     width: 100%;
   }
+  .banner-left img,
+  .solution-right img,
+  .verification-left img,
+  .verification-solution-right img,
+  .document-validation-right img,
+  .validation-security-features-right img,
+  .validation-security-features-bottom img,
+  .save-data-right img,
+  .online-gaming-right img,
+  .who-we-are-right img,
+  .contact-top-right img {
+    display: inline;
+  }
   .title-h2 {
     font-size: 2.4rem;
     line-height: 36px !important;
