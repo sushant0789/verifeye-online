@@ -22,7 +22,17 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-
+    <div class="navbar">
+      <div class="container">
+        <div class="row">
+          <a href="#our-solution" class="btn">Our Solution</a>
+          <a href="#clear-dashboard" class="btn">Client Dashboard</a>
+          <a href="#advance-check" class="btn">Due Diligence Check</a>
+          <a href="#who-we-are" class="btn">About Us</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+    </div>
     <div id="banner">
       <div class="container">
         <div class="row">
@@ -484,5 +494,18 @@
 
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementsByClassName("row");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
   </body>
 </html>

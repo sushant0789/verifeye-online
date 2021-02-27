@@ -39,6 +39,33 @@ h6 {
   font-weight: normal;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #572680;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus,
+.navbar a.active {
+  background: #fff;
+  color: #572680;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1170px;
@@ -56,6 +83,10 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#banner {
+  padding: 63px 0 0;
 }
 
 .banner-left {
@@ -158,7 +189,6 @@ h6 {
   font-size: 3.3rem;
   padding: 0 0 25px;
   margin: 0 0 25px;
-  letter-spacing: 1px;
 }
 
 .title-h2 span {
@@ -765,7 +795,6 @@ h6 {
 }
 
 .contact-top-left .title-h5 {
-  width: 40%;
   font-weight: normal;
 }
 
@@ -876,6 +905,10 @@ h6 {
   }
   .verification-ol {
     padding: 20px 0 0;
+  }
+  .verification-ol li:nth-child(n + 2),
+  .verification-solution-left h2 {
+    width: auto;
   }
   .verification-solution-number {
     font-size: 400px;
@@ -1147,12 +1180,16 @@ h6 {
   }
   .title-h2 {
     font-size: 2.4rem;
+    line-height: 36px !important;
   }
   .title-h3 {
     font-size: 2rem;
   }
   .verification-ol {
     padding: 20px 0;
+  }
+  .verification-ol li:nth-child(n + 2) {
+    width: auto;
   }
   .verification-solution-number {
     font-size: 200px;
