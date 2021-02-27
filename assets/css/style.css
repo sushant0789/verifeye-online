@@ -531,7 +531,9 @@ h6 {
 .validation-security-features-bottom {
   width: 100%;
   max-width: 100%;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .validation-security-features-bottom img {
@@ -1270,6 +1272,7 @@ h6 {
   .who-we-are-right,
   .contact-top-right,
   .banner-left {
+    display: inline;
     float: left;
   }
   .title-h2 {
