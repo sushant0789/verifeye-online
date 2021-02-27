@@ -66,7 +66,8 @@ h6 {
   color: #572680;
 }
 
-.mobile-menu {
+.mobile-menu,
+.navbar .logo {
   display: none;
 }
 
@@ -1128,6 +1129,24 @@ h6 {
 @media only screen and (max-width: 767px) {
   #nav {
     display: none;
+  }
+  .navbar .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 12px 15px 10px;
+    display: inline;
+  }
+  .navbar .logo img {
+    max-width: 180px;
   }
   .mobile-menu {
     display: inline-block;

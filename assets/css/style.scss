@@ -64,7 +64,8 @@ h6 {
   background: #fff;
   color: #572680;
 }
-.mobile-menu {
+.mobile-menu,
+.navbar .logo {
   display: none;
 }
 .container {
@@ -1012,6 +1013,20 @@ h6 {
   #nav {
     display: none;
   }
+  .navbar {
+    .container .row {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .logo {
+      align-self: flex-start;
+      padding: 12px 15px 10px;
+      display: inline;
+      img {
+        max-width: 180px;
+      }
+    }
+  }
   .mobile-menu {
     display: inline-block;
     align-self: flex-end;
@@ -1034,15 +1049,14 @@ h6 {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
-
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    transition: 0.3s;
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
   }
 
   .sidenav .closebtn {
