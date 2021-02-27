@@ -1003,6 +1003,9 @@ h6 {
     padding: 40px 0;
     width: 100%;
   }
+  .verification-solution-left {
+    height: 540px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
@@ -1123,6 +1126,9 @@ h6 {
   }
   .contact-top-left .title-h5 {
     width: 55%;
+  }
+  .verification-solution-left {
+    height: 540px;
   }
 }
 
