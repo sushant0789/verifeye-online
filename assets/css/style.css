@@ -1259,6 +1259,9 @@ h6 {
   .verification-ol li:nth-child(n + 2) {
     width: auto;
   }
+  .verification-solution-left {
+    padding-bottom: 50px;
+  }
   .verification-solution-number {
     font-size: 200px;
     bottom: -100px;
