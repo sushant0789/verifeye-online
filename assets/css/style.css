@@ -602,6 +602,10 @@ h6 {
   padding: 150px 100px;
 }
 
+.save-data-left.german .title-h2 {
+  width: 60%;
+}
+
 .save-data-left .title-h2 {
   width: 50%;
 }
@@ -1031,7 +1035,8 @@ h6 {
     left: 0;
     right: 0;
   }
-  .save-data-left .title-h2 {
+  .save-data-left .title-h2,
+  .save-data-left.german .title-h2 {
     width: 100%;
   }
   .advance-check-left {
@@ -1159,7 +1164,8 @@ h6 {
     width: 100%;
   }
   .save-data-left .title-h2,
-  .who-we-are-left .title-h2 {
+  .who-we-are-left .title-h2,
+  .save-data-left.german .title-h2 {
     width: 100%;
   }
   .advance-check-left {

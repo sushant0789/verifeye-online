@@ -507,6 +507,9 @@ h6 {
 
 .save-data-left {
   padding: 150px 100px;
+  &.german .title-h2 {
+    width: 60%;
+  }
   .title-h2 {
     width: 50%;
   }
@@ -883,7 +886,8 @@ h6 {
     left: 0;
     right: 0;
   }
-  .save-data-left {
+  .save-data-left,
+  .save-data-left.german {
     .title-h2 {
       width: 100%;
     }
@@ -1017,7 +1021,8 @@ h6 {
     }
   }
   .save-data-left .title-h2,
-  .who-we-are-left .title-h2 {
+  .who-we-are-left .title-h2,
+  .save-data-left.german .title-h2 {
     width: 100%;
   }
   .advance-check-left {
