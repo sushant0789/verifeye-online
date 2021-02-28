@@ -45,6 +45,15 @@ h6 {
   top: 0;
   width: 100%;
   z-index: 99;
+  .container .row {
+    justify-content: space-between;
+  }
+}
+.english-flag {
+  padding: 15px 0 0;
+  img {
+    width: 70px;
+  }
 }
 
 #nav a {
@@ -1082,15 +1091,21 @@ h6 {
       align-self: flex-start;
       padding: 14px 15px 8px;
       display: inline;
+      order: 1;
       img {
         max-width: 180px;
       }
     }
   }
+  .english-flag {
+    order: 2;
+    padding: 12px 0 0;
+  }
   .mobile-menu {
     display: inline-block;
     align-self: flex-end;
     padding: 15px 15px 10px;
+    order: 3;
   }
   .toggle {
     font-size: 30px;
