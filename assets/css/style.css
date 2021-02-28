@@ -970,6 +970,12 @@ h6 {
 /* Responsive Media Queries */
 /* For Ipad */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  #nav a {
+    padding: 20px 14px;
+  }
+  .english-flag {
+    padding-right: 15px;
+  }
   .banner-content {
     padding: 65px 80px 80px;
   }
@@ -1094,6 +1100,9 @@ h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
+  .english-flag {
+    padding-right: 15px;
+  }
   .banner-content {
     padding: 65px 80px 80px;
   }
