@@ -754,7 +754,7 @@ h6 {
   display: none;
   position: fixed;
   z-index: 100;
-  padding-top: 200px;
+  padding-top: 150px;
   left: 0;
   top: 0;
   width: 100%;
@@ -768,7 +768,7 @@ h6 {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 0 15px 15px;
   border: 1px solid #888;
   width: 50%;
   position: relative;
@@ -795,16 +795,16 @@ h6 {
   float: right;
   font-size: 36px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
-  cursor: pointer;
 }
 .video {
-  margin: 15px 0 0;
+  margin: 10px 0;
   width: 100%;
   height: 100%;
 }
@@ -935,6 +935,9 @@ h6 {
   .verification-solution-left {
     height: 540px;
   }
+  .modal-content {
+    width: 85%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
@@ -1060,6 +1063,9 @@ h6 {
   }
   .verification-solution-left {
     height: 540px;
+  }
+  .modal-content {
+    width: 85%;
   }
 }
 
@@ -1291,5 +1297,8 @@ h6 {
       bottom: 30px;
       right: 30px;
     }
+  }
+  .modal-content {
+    width: 90%;
   }
 }
