@@ -51,14 +51,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.english-flag {
-  padding: 15px 0 0;
-}
-
-.english-flag img {
-  width: 70px;
+  position: relative;
 }
 
 #nav a {
@@ -995,6 +988,59 @@ h6 {
   height: 100%;
 }
 
+.hide {
+  max-height: 0 !important;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  background-color: #572680;
+}
+
+.english-flag {
+  padding: 15px 10px 0;
+}
+
+.english-flag img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.dropdown .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dropdown .title .fa {
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.dropdown .menu {
+  -webkit-transition: max-height 0.5s ease-out;
+  transition: max-height 0.5s ease-out;
+  max-height: 20em;
+  overflow: hidden;
+}
+
+.dropdown .menu .option {
+  padding: 15px 0 5px;
+}
+
+.pointerCursor:hover {
+  cursor: pointer;
+}
+
 /* Responsive Media Queries */
 /* For Ipad */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -1029,7 +1075,8 @@ h6 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding: 12px 0 0;
+    padding: 15px 15px 0;
+    right: 50px;
   }
   .navbar.german .mobile-menu {
     display: inline-block;
@@ -1073,9 +1120,6 @@ h6 {
     top: 0;
     right: 10px;
     font-size: 36px;
-  }
-  .english-flag {
-    padding-right: 15px;
   }
   .banner-content {
     padding: 65px 50px 80px;
@@ -1255,7 +1299,8 @@ h6 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding: 12px 0 0;
+    padding: 15px 15px 0;
+    right: 50px;
   }
   .navbar.german .mobile-menu {
     display: inline-block;
@@ -1299,9 +1344,6 @@ h6 {
     top: 0;
     right: 10px;
     font-size: 36px;
-  }
-  .english-flag {
-    padding-right: 15px;
   }
   .banner-content {
     padding: 65px 70px 80px;
@@ -1457,9 +1499,6 @@ h6 {
   #nav {
     display: none;
   }
-  .english-flag img {
-    width: 60px;
-  }
   .navbar .container .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1485,7 +1524,17 @@ h6 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    padding: 12px 0 0;
+    padding: 15px 0 0;
+    right: 55px;
+  }
+  .english-flag img {
+    width: 50px;
+  }
+  .dropdown .menu {
+    padding: 0 0 0 10px;
+  }
+  .dropdown .title .fa {
+    margin-left: 5px;
   }
   .mobile-menu {
     display: inline-block;

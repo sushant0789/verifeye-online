@@ -56,8 +56,19 @@
               <a href="#contact" onclick="closeNav()">Kontakt</a>
             </div>
           </div>
-          <div class="english-flag">
-            <img src="assets/images/german-flag.png" alt="" />
+          <div class="dropdown english-flag">
+            <div class="title pointerCursor">
+              <img src="assets/images/german-flag.png" alt="" />
+              <i class="fa">&#x25BC;</i>
+            </div>
+
+            <div class="menu pointerCursor hide">
+              <div class="option">
+                <a href="index.html"
+                  ><img src="assets/images/english-flag.png" alt=""
+                /></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -586,6 +597,40 @@
           document.getElementsByClassName("video")[0].pause();
         }
       };
+
+      function toggleClass(elem, className) {
+        if (elem.className.indexOf(className) !== -1) {
+          elem.className = elem.className.replace(className, "");
+        } else {
+          elem.className =
+            elem.className.replace(/\s+/g, " ") + " " + className;
+        }
+
+        return elem;
+      }
+
+      function toggleDisplay(elem) {
+        const curDisplayStyle = elem.style.display;
+
+        if (curDisplayStyle === "none" || curDisplayStyle === "") {
+          elem.style.display = "block";
+        } else {
+          elem.style.display = "none";
+        }
+      }
+
+      function toggleMenuDisplay(e) {
+        const dropdown = e.currentTarget.parentNode;
+        const menu = dropdown.querySelector(".menu");
+
+        toggleClass(menu, "hide");
+      }
+
+      //get elements
+      const dropdownTitle = document.querySelector(".dropdown .title");
+
+      //bind listeners to these elements
+      dropdownTitle.addEventListener("click", toggleMenuDisplay);
     </script>
   </body>
 </html>

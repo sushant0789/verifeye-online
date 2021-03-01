@@ -46,12 +46,7 @@ h6 {
   z-index: 99;
   .container .row {
     justify-content: space-between;
-  }
-}
-.english-flag {
-  padding: 15px 0 0;
-  img {
-    width: 70px;
+    position: relative;
   }
 }
 
@@ -841,6 +836,48 @@ h6 {
   height: 100%;
 }
 
+.hide {
+  max-height: 0 !important;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  background-color: #572680;
+}
+
+.english-flag {
+  padding: 15px 10px 0;
+  img {
+    width: 60px;
+    border-radius: 50%;
+  }
+}
+
+.dropdown .title {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  .fa {
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+}
+
+.dropdown .menu {
+  transition: max-height 0.5s ease-out;
+  max-height: 20em;
+  overflow: hidden;
+  .option {
+    padding: 15px 0 5px;
+  }
+}
+
+.pointerCursor:hover {
+  cursor: pointer;
+}
+
 /* Responsive Media Queries */
 
 /* For Ipad */
@@ -867,7 +904,8 @@ h6 {
     }
     .english-flag {
       order: 2;
-      padding: 12px 0 0;
+      padding: 15px 15px 0;
+      right: 50px;
     }
     .mobile-menu {
       display: inline-block;
@@ -907,9 +945,6 @@ h6 {
         font-size: 36px;
       }
     }
-  }
-  .english-flag {
-    padding-right: 15px;
   }
   .banner-content {
     padding: 65px 50px 80px;
@@ -1083,7 +1118,8 @@ h6 {
     }
     .english-flag {
       order: 2;
-      padding: 12px 0 0;
+      padding: 15px 15px 0;
+      right: 50px;
     }
     .mobile-menu {
       display: inline-block;
@@ -1123,9 +1159,6 @@ h6 {
         font-size: 36px;
       }
     }
-  }
-  .english-flag {
-    padding-right: 15px;
   }
   .banner-content {
     padding: 65px 70px 80px;
@@ -1282,9 +1315,7 @@ h6 {
   #nav {
     display: none;
   }
-  .english-flag img {
-    width: 60px;
-  }
+
   .navbar {
     .container .row {
       flex-direction: row;
@@ -1302,7 +1333,19 @@ h6 {
   }
   .english-flag {
     order: 2;
-    padding: 12px 0 0;
+    padding: 15px 0 0;
+    right: 55px;
+    img {
+      width: 50px;
+    }
+  }
+  .dropdown {
+    .menu {
+      padding: 0 0 0 10px;
+    }
+    .title .fa {
+      margin-left: 5px;
+    }
   }
   .mobile-menu {
     display: inline-block;
