@@ -372,6 +372,7 @@ h6 {
   z-index: 1;
   max-width: auto;
   height: 65px;
+  width: auto;
 }
 
 .verification-process-content {
@@ -498,6 +499,7 @@ h6 {
   z-index: 1;
   max-width: auto;
   height: 65px;
+  width: auto;
 }
 
 .result {
@@ -595,6 +597,7 @@ h6 {
   z-index: 1;
   max-width: auto;
   height: 65px;
+  width: auto;
 }
 
 .save-data-left {
@@ -644,6 +647,7 @@ h6 {
   z-index: 1;
   max-width: auto;
   height: 65px;
+  width: auto;
 }
 
 .advance-check-right .white-box {
@@ -788,6 +792,7 @@ h6 {
   z-index: 1;
   max-width: auto;
   height: 65px;
+  width: auto;
 }
 
 .online-gaming-right-ul {
@@ -1010,6 +1015,7 @@ h6 {
   .contact-top-right img,
   .banner-left img {
     height: 100%;
+    width: 100%;
   }
   .verification-right .title-h2 {
     padding: 0 0 30px;
