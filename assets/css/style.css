@@ -756,7 +756,9 @@ h6 {
   max-width: 100%;
   color: #572680;
   font-size: 1.2rem;
-  padding: 0 0 15px;
+  padding: 3px 0 15px 40px;
+  position: relative;
+  vertical-align: top;
 }
 
 .innovative-product-features-ul li span {
@@ -768,6 +770,9 @@ h6 {
   border-radius: 50%;
   border: 1px solid #572680;
   margin: 0 5px 0 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .online-gaming-left {
@@ -1047,79 +1052,11 @@ h6 {
   #nav a {
     padding: 20px 14px;
   }
-  .german #nav {
+  .solution-ul li br {
     display: none;
   }
-  .navbar.german .container .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .navbar.german .logo {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    padding: 17px 15px 12px;
-    display: inline;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .navbar.german .logo img {
-    max-width: 160px;
-  }
-  .navbar.german .english-flag {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    padding: 15px 15px 0;
-    right: 50px;
-  }
-  .navbar.german .mobile-menu {
-    display: inline-block;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 15px 15px 10px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .navbar.german .toggle {
-    font-size: 30px;
-    color: #fff;
-    text-align: right;
-    cursor: pointer;
-  }
-  .navbar.german .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #572680;
-    overflow-x: hidden;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  .navbar.german .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .navbar.german .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 36px;
+  .solution-ul {
+    padding-bottom: 30px;
   }
   .banner-content {
     padding: 65px 50px 80px;
@@ -1225,15 +1162,7 @@ h6 {
     padding-top: 100px;
   }
   .innovative-product-features-ul li {
-    vertical-align: text-top;
-    position: relative;
-    padding: 0 15px 25px 40px;
     width: 48%;
-  }
-  .innovative-product-features-ul li span {
-    position: absolute;
-    top: -2px;
-    left: 0;
   }
   .online-gaming-right {
     background-color: #572680;
@@ -1271,79 +1200,11 @@ h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
-  .german #nav {
+  .solution-ul li br {
     display: none;
   }
-  .navbar.german .container .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .navbar.german .logo {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    padding: 17px 15px 12px;
-    display: inline;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .navbar.german .logo img {
-    max-width: 160px;
-  }
-  .navbar.german .english-flag {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    padding: 15px 15px 0;
-    right: 50px;
-  }
-  .navbar.german .mobile-menu {
-    display: inline-block;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    padding: 15px 15px 10px;
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .navbar.german .toggle {
-    font-size: 30px;
-    color: #fff;
-    text-align: right;
-    cursor: pointer;
-  }
-  .navbar.german .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #572680;
-    overflow-x: hidden;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  .navbar.german .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  .navbar.german .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 36px;
+  .solution-ul {
+    padding-bottom: 30px;
   }
   .banner-content {
     padding: 65px 70px 80px;
@@ -1448,15 +1309,7 @@ h6 {
     padding-top: 100px;
   }
   .innovative-product-features-ul li {
-    vertical-align: text-top;
-    position: relative;
-    padding: 0 15px 25px 40px;
     width: 48%;
-  }
-  .innovative-product-features-ul li span {
-    position: absolute;
-    top: -2px;
-    left: 0;
   }
   .online-gaming-right {
     background-color: #572680;
@@ -1496,7 +1349,8 @@ h6 {
 }
 
 @media only screen and (max-width: 767px) {
-  #nav {
+  #nav,
+  .solution-ul li br {
     display: none;
   }
   .navbar .container .row {
@@ -1763,13 +1617,6 @@ h6 {
   }
   .innovative-product-features-ul li {
     width: 100%;
-    padding: 0 0 25px 40px;
-    position: relative;
-  }
-  .innovative-product-features-ul li span {
-    position: absolute;
-    top: -2px;
-    left: 0;
   }
   .online-gaming-right {
     background-color: #572680;

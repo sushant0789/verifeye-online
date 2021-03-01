@@ -578,6 +578,7 @@
       // When the user clicks the button, open the modal
       btn.onclick = function () {
         modal.style.display = "block";
+        document.getElementsByClassName("video")[0].play();
       };
 
       // When the user clicks on <span> (x), close the modal
