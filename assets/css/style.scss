@@ -363,7 +363,15 @@ h6 {
   line-height: 32px;
   margin: 0;
   padding: 0 0 25px;
-  width: 80%;
+  width: 95%;
+  &.german {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for WebKit */
+    word-break: break-word;
+    hyphens: auto;
+  }
 }
 .verification-process-para {
   font-size: 1.2rem;
@@ -407,6 +415,14 @@ h6 {
     font-size: 1.2rem;
     line-height: 18px;
     padding: 0 15px;
+  }
+  &.german li {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for WebKit */
+    word-break: break-word;
+    hyphens: auto;
   }
 }
 .document-validation-right {
@@ -878,6 +894,14 @@ h6 {
   .verification-solution-left h2 {
     width: auto;
   }
+  .verification-solution-left.german h2 {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for WebKit */
+    word-break: break-word;
+    hyphens: auto;
+  }
   .verification-solution-number {
     font-size: 400px;
     bottom: -220px;
@@ -1017,6 +1041,14 @@ h6 {
     padding: 0 0 30px;
     margin: 0;
   }
+  .verification-solution-left.german h2 {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for WebKit */
+    word-break: break-word;
+    hyphens: auto;
+  }
   .verification-solution-number {
     font-size: 400px;
     bottom: -220px;
@@ -1029,7 +1061,6 @@ h6 {
   }
   .document-validation-ul {
     padding: 0 0 20px;
-    width: 100%;
     li {
       height: 100px;
       width: 100px;
@@ -1224,6 +1255,14 @@ h6 {
       width: 100%;
     }
   }
+  .verification-process-content.german .title-h2 {
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+    /* Non standard for WebKit */
+    word-break: break-word;
+    hyphens: auto;
+  }
 
   .title-h2 {
     font-size: 2.4rem;
@@ -1240,6 +1279,14 @@ h6 {
   }
   .verification-solution-left {
     padding-bottom: 50px;
+    &.german h2 {
+      -ms-word-break: break-all;
+      word-break: break-all;
+
+      /* Non standard for WebKit */
+      word-break: break-word;
+      hyphens: auto;
+    }
   }
   .verification-solution-number {
     font-size: 200px;
@@ -1273,6 +1320,14 @@ h6 {
     left: 30px;
     right: 30px;
     bottom: 40px;
+    &.german p {
+      -ms-word-break: break-all;
+      word-break: break-all;
+
+      /* Non standard for WebKit */
+      word-break: break-word;
+      hyphens: auto;
+    }
   }
   .validation-security-features-left .title-h5 {
     width: 100%;
