@@ -1001,14 +1001,93 @@ h6 {
   #nav a {
     padding: 20px 14px;
   }
+  .german #nav {
+    display: none;
+  }
+  .navbar.german .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar.german .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 17px 15px 12px;
+    display: inline;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .navbar.german .logo img {
+    max-width: 160px;
+  }
+  .navbar.german .english-flag {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 12px 0 0;
+  }
+  .navbar.german .mobile-menu {
+    display: inline-block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 15px 15px 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .navbar.german .toggle {
+    font-size: 30px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+  }
+  .navbar.german .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #572680;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .navbar.german .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar.german .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
   .english-flag {
     padding-right: 15px;
   }
   .banner-content {
-    padding: 65px 80px 80px;
+    padding: 65px 50px 80px;
   }
   .banner-content h1 {
     font-size: 2.5rem;
+  }
+  .banner-content .logo img {
+    width: 200px;
+  }
+  .banner-right {
+    padding: 125px 0 140px;
   }
   .solution-left,
   .verification-right,
@@ -1148,14 +1227,90 @@ h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
+  .german #nav {
+    display: none;
+  }
+  .navbar.german .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar.german .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 17px 15px 12px;
+    display: inline;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .navbar.german .logo img {
+    max-width: 160px;
+  }
+  .navbar.german .english-flag {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 12px 0 0;
+  }
+  .navbar.german .mobile-menu {
+    display: inline-block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 15px 15px 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .navbar.german .toggle {
+    font-size: 30px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+  }
+  .navbar.german .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #572680;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .navbar.german .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar.german .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
   .english-flag {
     padding-right: 15px;
   }
   .banner-content {
-    padding: 65px 80px 80px;
+    padding: 65px 70px 80px;
   }
   .banner-content h1 {
     font-size: 3rem;
+  }
+  .banner-right {
+    padding: 123px 0 137px;
   }
   .solution-left,
   .verification-right,
@@ -1302,6 +1457,9 @@ h6 {
   #nav {
     display: none;
   }
+  .english-flag img {
+    width: 60px;
+  }
   .navbar .container .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1393,7 +1551,7 @@ h6 {
     padding: 0;
   }
   .banner-content {
-    padding: 40px 50px 100px 30px;
+    padding: 40px 50px 50px 30px;
   }
   .banner-content h1 {
     font-size: 2rem;
