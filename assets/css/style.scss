@@ -178,6 +178,7 @@ h6 {
   font-size: 3.3rem;
   padding: 0 0 25px;
   margin: 0 0 25px;
+  line-height: 50px;
   span {
     display: block;
     font-size: 24px;
@@ -721,27 +722,38 @@ h6 {
 }
 
 .contact-top-left {
-  padding: 150px 100px 0;
-  .title-h5 {
-    font-weight: normal;
-    a {
-      font-weight: bold;
-      color: #572680;
-    }
+  padding: 150px 50px 0 100px;
+}
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  .title-h3 {
+    line-height: 30px;
+  }
+  a {
+    color: #572680;
+    font-size: 1.2rem;
   }
 }
 
 .contact-bottom-left {
   width: 100%;
   max-width: 70%;
-  padding: 30px;
+  padding: 70px 50px 40px 100px;
+  .title-h5 {
+    padding: 30px 0;
+    a {
+      color: #572680;
+      font-weight: bold;
+    }
+  }
 }
 .contact-bottom-right {
   background-color: #572680;
   width: 100%;
   max-width: 30%;
   position: relative;
-  height: 350px;
   .logo {
     position: absolute;
     bottom: 50px;
@@ -750,20 +762,6 @@ h6 {
       max-width: 150px;
       width: 100%;
     }
-  }
-}
-
-.contact-list {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  padding: 40px 70px;
-  .title-h3 {
-    line-height: 30px;
-  }
-  a {
-    color: #572680;
-    font-size: 1.2rem;
   }
 }
 
@@ -864,8 +862,11 @@ h6 {
   width: 100%;
   color: #fff;
   align-items: center;
+  span {
+    padding-left: 7px;
+  }
   .fa {
-    margin-left: 10px;
+    padding-left: 5px;
     transition: transform 0.3s;
   }
 }
@@ -875,7 +876,16 @@ h6 {
   max-height: 20em;
   overflow: hidden;
   .option {
-    padding: 15px 0 5px;
+    padding: 15px 0 10px;
+    a {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      span {
+        padding-left: 7px;
+      }
+    }
   }
 }
 
@@ -1026,14 +1036,27 @@ h6 {
     }
   }
   .contact-top-left {
-    padding-bottom: 0;
+    padding: 30px 30px 0 30px;
     .title-h5 {
       padding: 20px 0;
     }
   }
+  .contact-bottom-left {
+    padding: 80px 30px 30px 30px;
+    .title-h2 {
+      width: 70%;
+    }
+    .title-h5 {
+      padding-top: 10px;
+    }
+  }
   .contact-list {
-    padding: 40px 0;
+    padding: 20px 0 0;
     width: 100%;
+    flex-direction: column;
+    div {
+      padding-bottom: 30px;
+    }
   }
   .modal-content {
     width: 85%;
@@ -1173,8 +1196,14 @@ h6 {
     }
   }
   .contact-list {
-    padding: 40px 0 0 20px;
+    padding: 40px 0 0;
     width: 100%;
+  }
+  .contact-bottom-left {
+    padding-left: 50px;
+    .title-h2 {
+      width: 60%;
+    }
   }
   .who-we-are-left {
     padding-bottom: 0;
@@ -1203,11 +1232,11 @@ h6 {
     }
     .logo {
       align-self: flex-start;
-      padding: 14px 15px 8px;
+      padding: 15px 15px 8px;
       display: inline;
       order: 1;
       img {
-        max-width: 160px;
+        max-width: 140px;
       }
     }
   }
@@ -1222,9 +1251,6 @@ h6 {
   .dropdown {
     .menu {
       padding: 0 0 0 10px;
-    }
-    .title .fa {
-      margin-left: 5px;
     }
   }
   .mobile-menu {
@@ -1446,6 +1472,12 @@ h6 {
     flex-direction: column;
     div {
       padding: 0 0 25px;
+    }
+  }
+  .contact-bottom-left {
+    padding: 80px 30px 30px 30px;
+    .title-h5 {
+      width: auto;
     }
   }
   .contact-bottom-right {
