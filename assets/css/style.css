@@ -1067,9 +1067,81 @@ h6 {
 /* Responsive Media Queries */
 /* For Ipad */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  #nav a {
-    padding: 20px 14px;
+  .navbar .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
+  .navbar .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 17px 15px 12px;
+    display: inline;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .navbar .logo img {
+    max-width: 160px;
+  }
+  .navbar .english-flag {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 15px 15px 0;
+    right: 50px;
+  }
+  .navbar .mobile-menu {
+    display: inline-block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 15px 15px 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .navbar .toggle {
+    font-size: 30px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+  }
+  .navbar .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #572680;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .navbar .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
+  /* #nav a {
+    padding: 20px 14px;
+  } */
+  #nav,
   .solution-ul li br {
     display: none;
   }
@@ -1234,6 +1306,78 @@ h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
+  .navbar .container .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding: 17px 15px 12px;
+    display: inline;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .navbar .logo img {
+    max-width: 160px;
+  }
+  .navbar .english-flag {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 15px 15px 0;
+    right: 50px;
+  }
+  .navbar .mobile-menu {
+    display: inline-block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 15px 15px 10px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .navbar .toggle {
+    font-size: 30px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+  }
+  .navbar .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #572680;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .navbar .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbar .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+  }
+  #nav,
   .solution-ul li br {
     display: none;
   }
