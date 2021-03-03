@@ -852,7 +852,7 @@ h6 {
 .english-flag {
   padding: 15px 10px 0;
   img {
-    width: 60px;
+    width: 35px;
     border-radius: 50%;
   }
 }
@@ -897,68 +897,9 @@ h6 {
 
 /* For Ipad */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .navbar {
-    .container .row {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .logo {
-      align-self: flex-start;
-      padding: 17px 15px 12px;
-      display: inline;
-      order: 1;
-      img {
-        max-width: 160px;
-      }
-    }
-    .english-flag {
-      order: 2;
-      padding: 15px 15px 0;
-      right: 50px;
-    }
-    .mobile-menu {
-      display: inline-block;
-      align-self: flex-end;
-      padding: 15px 15px 10px;
-      order: 3;
-    }
-    .toggle {
-      font-size: 30px;
-      color: #fff;
-      text-align: right;
-      cursor: pointer;
-    }
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #572680;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-      a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #fff;
-        display: block;
-        transition: 0.3s;
-      }
-      .closebtn {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        font-size: 36px;
-      }
-    }
+  #nav a {
+    padding: 20px 12px;
   }
-  /* #nav a {
-    padding: 20px 14px;
-  } */
-  #nav,
   .solution-ul li br {
     display: none;
   }
@@ -1123,65 +1064,6 @@ h6 {
 }
 
 @media (min-width: 768px) and (max-width: 1112px) and (orientation: landscape) {
-  .navbar {
-    .container .row {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    .logo {
-      align-self: flex-start;
-      padding: 17px 15px 12px;
-      display: inline;
-      order: 1;
-      img {
-        max-width: 160px;
-      }
-    }
-    .english-flag {
-      order: 2;
-      padding: 15px 15px 0;
-      right: 50px;
-    }
-    .mobile-menu {
-      display: inline-block;
-      align-self: flex-end;
-      padding: 15px 15px 10px;
-      order: 3;
-    }
-    .toggle {
-      font-size: 30px;
-      color: #fff;
-      text-align: right;
-      cursor: pointer;
-    }
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #572680;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-      a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #fff;
-        display: block;
-        transition: 0.3s;
-      }
-      .closebtn {
-        position: absolute;
-        top: 0;
-        right: 10px;
-        font-size: 36px;
-      }
-    }
-  }
-  #nav,
   .solution-ul li br {
     display: none;
   }
@@ -1362,9 +1244,6 @@ h6 {
     order: 2;
     padding: 15px 0 0;
     right: 55px;
-    img {
-      width: 50px;
-    }
   }
   .dropdown {
     .menu {
