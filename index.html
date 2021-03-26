@@ -99,9 +99,31 @@
       <div class="container">
         <div class="row">
           <div class="one-interface">
+            <div class="violet-box"></div>
+            <div class="yellow-box"></div>
             <h2 class="title-h2">
               One Interface, <br />Three Verification Options
             </h2>
+            <div class="three-veri">
+              <div class="verification-process-number">1</div>
+              <h2>Document-Validation (Auto-Ident)</h2>
+            </div>
+            <div class="three-veri">
+              <div class="verification-process-number">2</div>
+              <h2>Video-Ident</h2>
+            </div>
+            <div class="three-veri">
+              <div class="verification-process-number">3</div>
+              <h2>Konto-Ident</h2>
+            </div>
+            <div class="three-veri">
+              <div class="verification-process-number last">+</div>
+              <h2>Qualified Electronic Signature</h2>
+            </div>
+            <h4 class="three-veri-h4">
+              Our modular design enables a tailor-made solution for your
+              customer verification.
+            </h4>
           </div>
         </div>
       </div>
@@ -182,8 +204,8 @@
               </li>
               <li>
                 <span>4.2</span>Konto-Ident<br />
-                Additional information such as fraud and limit reports can be
-                supplied
+                Additional information such as fraud and limit <br />reports can
+                be supplied
               </li>
               <li>
                 <span>5</span>The result of the verification is transmitted
@@ -215,6 +237,26 @@
               src="assets/images/verification-solution.jpg"
               alt="verification solution"
             />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="kento-ident">
+      <div class="container">
+        <div class="row">
+          <div class="kento-ident-left left-45">
+            <img
+              src="assets/images/kento-ident.jpg"
+              alt="verification solution"
+            />
+          </div>
+          <div class="kento-ident-right right-55">
+            <h2>Konto-Ident quickly explained</h2>
+            <a target="_blank" class="play-btn" id="playBtn2"
+              ><span>&#9658;</span> Play</a
+            >
+            <div class="kento-ident-number">KON</div>
           </div>
         </div>
       </div>
@@ -603,12 +645,18 @@
 
       // Get the button that opens the modal
       var btn = document.getElementById("playBtn");
+      var btnB = document.getElementById("playBtn2");
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
       // When the user clicks the button, open the modal
       btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementsByClassName("video")[0].play();
+      };
+
+      btnB.onclick = function () {
         modal.style.display = "block";
         document.getElementsByClassName("video")[0].play();
       };

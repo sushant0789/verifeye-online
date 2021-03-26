@@ -191,7 +191,69 @@ h6 {
 }
 
 .one-interface {
-  padding: 150px 100px;
+  padding: 120px 100px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.one-interface .violet-box {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 1;
+  padding: 35px;
+  content: "";
+  background-color: #572680;
+}
+
+.one-interface .yellow-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 20px;
+  content: "";
+  background-color: #fcd647;
+}
+
+.one-interface .title-h2 {
+  padding: 0 0 50px;
+  margin-bottom: 50px;
+}
+
+.one-interface .verification-process-number {
+  margin: 0 40px 0 0;
+}
+
+.one-interface .verification-process-number.last {
+  color: #572680;
+  background-color: #fff;
+  border: 4px solid #572680;
+  font-weight: bold;
+}
+
+.one-interface .three-veri {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 40px;
+}
+
+.one-interface .three-veri h2 {
+  font-size: 2rem;
+  color: #572680;
+}
+
+.three-veri-h4 {
+  font-size: 1.6rem;
+  color: #572680;
 }
 
 .solution-left {
@@ -275,13 +337,13 @@ h6 {
 
 .verification-ol {
   margin: 0;
-  padding: 50px 0 0;
+  padding: 40px 0 0;
 }
 
 .verification-ol li {
   color: #572680;
   font-size: 1.3rem;
-  padding: 0 0 30px 50px;
+  padding: 15px 0 15px 50px;
   line-height: 21px;
   position: relative;
   list-style: none;
@@ -289,6 +351,11 @@ h6 {
 
 .verification-ol li:nth-child(n + 2) {
   width: 85%;
+}
+
+.verification-ol li:nth-child(4n), .verification-ol li:nth-child(5n) {
+  background-color: #f2f2f2;
+  width: 100%;
 }
 
 .verification-ol li span {
@@ -313,12 +380,14 @@ h6 {
   display: flex;
 }
 
-#verification-solution .row {
+#verification-solution .row,
+#kento-ident .row {
   position: relative;
   overflow: hidden;
 }
 
-.verification-solution-number {
+.verification-solution-number,
+.kento-ident-number {
   color: #fff;
   font-size: 600px;
   bottom: -320px;
@@ -328,12 +397,18 @@ h6 {
   z-index: 1;
 }
 
-.verification-solution-left {
+.kento-ident-number {
+  left: 0;
+}
+
+.verification-solution-left,
+.kento-ident-right {
   background-color: #0092ab;
   padding: 160px 120px 0 120px;
 }
 
-.verification-solution-left h2 {
+.verification-solution-left h2,
+.kento-ident-right h2 {
   font-size: 48px;
   color: #fff;
   line-height: 48px;
@@ -341,7 +416,8 @@ h6 {
   width: 90%;
 }
 
-.verification-solution-left .play-btn {
+.verification-solution-left .play-btn,
+.kento-ident-right .play-btn {
   background-color: #fff;
   color: #0092ab;
   font-size: 24px;
@@ -351,19 +427,31 @@ h6 {
   cursor: pointer;
 }
 
-.verification-solution-left .play-btn span {
+.verification-solution-left .play-btn span,
+.kento-ident-right .play-btn span {
   font-size: 18px;
 }
 
-.verification-solution-right {
+.kento-ident-right {
+  background-color: #572680;
+}
+
+.kento-ident-right .play-btn {
+  color: #572680;
+}
+
+.verification-solution-right,
+.kento-ident-left {
   position: relative;
 }
 
-.verification-solution-right img {
+.verification-solution-right img,
+.kento-ident-left img {
   max-width: 100%;
 }
 
-.verification-solution-right .verifeye-icon {
+.verification-solution-right .verifeye-icon,
+.kento-ident-left .verifeye-icon {
   position: absolute;
   top: 30px;
   right: 40px;
@@ -915,6 +1003,7 @@ h6 {
 .solution-right,
 .verification-left,
 .verification-solution-right,
+.kento-ident-left,
 .document-validation-right,
 .validation-security-features-right,
 .save-data-right,
@@ -1112,7 +1201,8 @@ h6 {
   .innovative-product-features,
   .online-gaming-left,
   .who-we-are-left,
-  .contact-top-left {
+  .contact-top-left,
+  .kento-ident-right {
     padding: 80px 30px 30px;
   }
   .solution-right img,
@@ -1147,9 +1237,19 @@ h6 {
         -ms-hyphens: auto;
             hyphens: auto;
   }
-  .verification-solution-number {
+  .verification-solution-number,
+  .kento-ident-number {
     font-size: 400px;
     bottom: -220px;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .verification-process-blocks .col-md-4 {
     width: 30%;
@@ -1305,9 +1405,19 @@ h6 {
         -ms-hyphens: auto;
             hyphens: auto;
   }
-  .verification-solution-number {
+  .verification-solution-number,
+  .kento-ident-number {
     font-size: 400px;
     bottom: -220px;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .verification-process-blocks .col-md-4 {
     width: 30%;
@@ -1519,7 +1629,9 @@ h6 {
   .innovative-product-features,
   .online-gaming-left,
   .who-we-are-left,
-  .contact-top-left {
+  .contact-top-left,
+  .one-interface,
+  .kento-ident-right {
     padding: 80px 30px 30px 30px;
     max-width: none;
   }
@@ -1535,7 +1647,9 @@ h6 {
   .innovative-product-features .title-h2,
   .online-gaming-left .title-h2,
   .who-we-are-left .title-h2,
-  .contact-top-left .title-h2 {
+  .contact-top-left .title-h2,
+  .one-interface .title-h2,
+  .kento-ident-right .title-h2 {
     padding: 0 0 25px;
     width: 100%;
   }
@@ -1573,10 +1687,21 @@ h6 {
         -ms-hyphens: auto;
             hyphens: auto;
   }
-  .verification-solution-number {
-    font-size: 200px;
+  .kento-ident-right {
+    padding-bottom: 150px;
+  }
+  .verification-solution-number,
+  .kento-ident-number {
+    font-size: 180px;
     bottom: -100px;
-    left: 10%;
+    left: 15px;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .verification-process-blocks {
     -webkit-box-orient: vertical;
@@ -1659,8 +1784,21 @@ h6 {
   .advance-check-ul li {
     padding: 0 0 0 10px;
   }
-  .innovative-product-features .title-h2 {
+  .innovative-product-features .title-h2,
+  .one-interface .title-h2 {
     padding-top: 100px;
+  }
+  .one-interface .three-veri h2 {
+    font-size: 1.4rem;
+    width: 70%;
+  }
+  .one-interface .three-veri-h4 {
+    font-size: 1.2rem;
+  }
+  .one-interface .verification-process-number {
+    margin: 0 20px 0 0;
+    width: 60px;
+    height: 60px;
   }
   .innovative-product-features-ul li {
     width: 100%;
