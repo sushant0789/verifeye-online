@@ -190,6 +190,10 @@ h6 {
   width: 100%;
 }
 
+.one-interface {
+  padding: 150px 100px;
+}
+
 .solution-left {
   padding: 100px 50px 0;
 }
@@ -271,7 +275,7 @@ h6 {
 
 .verification-ol {
   margin: 0;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .verification-ol li {
@@ -374,7 +378,7 @@ h6 {
 }
 
 .verification-process-content .title-h2 {
-  width: 30%;
+  width: 80%;
   line-height: 48px;
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -391,6 +395,10 @@ h6 {
 
 .verification-process-blocks .col-md-4 {
   width: 25%;
+}
+
+.verification-process-blocks .col-md-4 .title-h4 {
+  width: 50%;
 }
 
 .verification-process-number {
@@ -436,6 +444,11 @@ h6 {
   color: #572680;
   width: 85%;
   line-height: 20px;
+  padding: 0 0 20px;
+}
+
+.verification-process-para.last {
+  width: 100%;
 }
 
 .document-validation-left {
