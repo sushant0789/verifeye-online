@@ -218,7 +218,7 @@
       <div class="container">
         <div class="row">
           <div class="verification-solution-left german left-55">
-            <h2>Video-Ident in 150 Sekunden erklärt</h2>
+            <h2>Video-Ident <br />in 150 Sekunden erklärt</h2>
             <a class="play-btn" id="playBtn"><span>&#9658;</span> Play</a>
             <div class="verification-solution-number">VID</div>
           </div>
@@ -247,7 +247,7 @@
             />
           </div>
           <div class="kento-ident-right right-55">
-            <h2>Konto-Ident quickly explained</h2>
+            <h2>Konto-Ident <br />kurz erklärt</h2>
             <a target="_blank" class="play-btn" id="playBtn2"
               ><span>&#9658;</span> Play</a
             >
@@ -339,7 +339,7 @@
               <div class="col-md-4">
                 <div class="verification-process-number">1</div>
                 <h4 class="title-h4">Fraud-Report</h4>
-                <p class="verification-process-para">
+                <p class="verification-process-para german">
                   Liefert das Konto Anhaltspunkte für betrügerisches Verhalten?
                 </p>
                 <p class="verification-process-para">
@@ -351,7 +351,7 @@
               <div class="col-md-4">
                 <div class="verification-process-number">2</div>
                 <h4 class="title-h4">Limit-Report</h4>
-                <p class="verification-process-para">
+                <p class="verification-process-para german">
                   Berechnung des frei verfügbaren Einkommens des Konto-Inhabers
                 </p>
                 <p class="verification-process-para">
@@ -362,7 +362,7 @@
               <div class="col-md-4">
                 <div class="verification-process-number">3</div>
                 <h4 class="title-h4">Funding-Report</h4>
-                <p class="verification-process-para">
+                <p class="verification-process-para german">
                   Woher stammen die Einnahmen des Konto-Inhabers?
                 </p>
                 <p class="verification-process-para last">
@@ -629,6 +629,23 @@
         </video>
       </div>
     </div>
+
+    <!-- The Modal2 -->
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close2">&times;</span>
+        <video controls class="video2">
+          <source
+            src="assets/video/verifeye-konto-indent.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video element. Kindly update it to
+          latest version.
+        </video>
+      </div>
+    </div>
+
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -657,18 +674,12 @@
 
       // Get the button that opens the modal
       var btn = document.getElementById("playBtn");
-      var btnB = document.getElementById("playBtn2");
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
       // When the user clicks the button, open the modal
       btn.onclick = function () {
-        modal.style.display = "block";
-        document.getElementsByClassName("video")[0].play();
-      };
-
-      btnB.onclick = function () {
         modal.style.display = "block";
         document.getElementsByClassName("video")[0].play();
       };
@@ -680,12 +691,41 @@
       };
 
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function (event) {
+      window.addEventListener("click", function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
           document.getElementsByClassName("video")[0].pause();
         }
+      });
+
+      // Get the modalB
+      var modalB = document.getElementById("myModal2");
+
+      // Get the button that opens the modalB
+      var btnB = document.getElementById("playBtn2");
+
+      // Get the <span> element that closes the modalB
+      var spanB = document.getElementsByClassName("close2")[0];
+
+      // When the user clicks the button, open the modal
+      btnB.onclick = function () {
+        modalB.style.display = "block";
+        document.getElementsByClassName("video2")[0].play();
       };
+
+      // When the user clicks on <span> (x), close the modal
+      spanB.onclick = function () {
+        modalB.style.display = "none";
+        document.getElementsByClassName("video2")[0].pause();
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.addEventListener("click", function (event) {
+        if (event.target == modalB) {
+          modalB.style.display = "none";
+          document.getElementsByClassName("video2")[0].pause();
+        }
+      });
 
       function toggleClass(elem, className) {
         if (elem.className.indexOf(className) !== -1) {

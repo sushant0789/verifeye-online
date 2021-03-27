@@ -555,6 +555,10 @@ h6 {
   width: 100%;
 }
 
+.verification-process-para.german {
+  width: 90%;
+}
+
 .document-validation-left {
   padding: 170px 70px 0 70px;
 }
@@ -1092,7 +1096,8 @@ h6 {
 }
 
 /* The Close Button */
-.close {
+.close,
+.close2 {
   color: #aaaaaa;
   float: right;
   font-size: 36px;
@@ -1101,12 +1106,15 @@ h6 {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close2:hover,
+.close2:focus {
   color: #000;
   text-decoration: none;
 }
 
-.video {
+.video,
+.video2 {
   margin: 10px 0;
   width: 100%;
   height: 100%;
@@ -1239,9 +1247,6 @@ h6 {
   .verification-right .title-h2 {
     padding: 0 0 30px;
   }
-  .verification-ol {
-    padding: 20px 0 0;
-  }
   .verification-ol li:nth-child(n + 2),
   .verification-solution-left h2 {
     width: auto;
@@ -1276,8 +1281,8 @@ h6 {
     width: 100%;
   }
   .result {
-    left: 50px;
-    right: 50px;
+    left: 30px;
+    right: 30px;
   }
   .validation-security-features-left {
     max-width: 60%;
@@ -1361,6 +1366,9 @@ h6 {
   }
   .modal-content {
     width: 85%;
+  }
+  .verification-process-para.german {
+    min-height: 100px;
   }
 }
 
@@ -1526,6 +1534,9 @@ h6 {
   }
   .modal-content {
     width: 85%;
+  }
+  .verification-process-para {
+    min-height: 80px;
   }
 }
 
