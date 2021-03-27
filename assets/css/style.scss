@@ -852,11 +852,23 @@ h6 {
   position: relative;
   .logo {
     position: absolute;
-    bottom: 50px;
+    bottom: 80px;
     right: 50px;
     img {
       max-width: 150px;
       width: 100%;
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+    li {
+      list-style: none;
+      padding: 0 0 0 15px;
     }
   }
 }
@@ -1625,7 +1637,11 @@ h6 {
     height: 100px;
     .logo {
       bottom: 30px;
+      left: 30px;
+    }
+    ul {
       right: 30px;
+      bottom: 30px;
     }
   }
   .modal-content {

@@ -1013,13 +1013,29 @@ h6 {
 
 .contact-bottom-right .logo {
   position: absolute;
-  bottom: 50px;
+  bottom: 80px;
   right: 50px;
 }
 
 .contact-bottom-right .logo img {
   max-width: 150px;
   width: 100%;
+}
+
+.contact-bottom-right ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 50px;
+  bottom: 40px;
+}
+
+.contact-bottom-right ul li {
+  list-style: none;
+  padding: 0 0 0 15px;
 }
 
 .solution-right,
@@ -1868,7 +1884,11 @@ h6 {
   }
   .contact-bottom-right .logo {
     bottom: 30px;
+    left: 30px;
+  }
+  .contact-bottom-right ul {
     right: 30px;
+    bottom: 30px;
   }
   .modal-content {
     width: 90%;
