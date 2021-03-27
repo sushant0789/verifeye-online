@@ -91,7 +91,39 @@
         </div>
       </div>
     </div>
-
+    <div id="one-interface">
+      <div class="container">
+        <div class="row">
+          <div class="one-interface">
+            <div class="violet-box"></div>
+            <div class="yellow-box"></div>
+            <h2 class="title-h2">
+              Eine Schnittstelle, <br />drei Verifizierungsverfahren
+            </h2>
+            <div class="three-veri">
+              <div class="verification-process-number">1</div>
+              <h2>Dokumenten-Validierung (Auto-Ident)</h2>
+            </div>
+            <div class="three-veri">
+              <div class="verification-process-number">2</div>
+              <h2>Video-Ident</h2>
+            </div>
+            <div class="three-veri">
+              <div class="verification-process-number">3</div>
+              <h2>Konto-Ident</h2>
+            </div>
+            <div class="three-veri">
+              <div class="verification-process-number last">+</div>
+              <h2>Qualifizierte Elektronische Signatur</h2>
+            </div>
+            <h4 class="three-veri-h4">
+              Die modulare Bauweise ermöglicht eine<br />
+              maßgeschneiderte Lösung für Ihre Kunden-Verifizierung.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="our-solution">
       <div class="container">
         <div class="row">
@@ -162,9 +194,14 @@
               </li>
 
               <li>
-                <span>4</span>Die ID-Validierung per Video-Call erfolgt nach
-                höchsten Sicherheitsstandards und kann individuell angepasst
+                <span>4.1</span>Video-Ident<br />
+                Die ID-Validierung per Video-Call kann individuell angepasst
                 werden
+              </li>
+              <li>
+                <span>4.2</span>Konto-Ident<br />
+                Weitere Informationen wie Fraud- und Limit-Reports können
+                mitgeliefert werden
               </li>
 
               <li>
@@ -181,9 +218,9 @@
       <div class="container">
         <div class="row">
           <div class="verification-solution-left german left-55">
-            <h2>Die Verifizierungslösung erklärt in 140 Sekunden</h2>
+            <h2>Die Verifizierungslösung erklärt in 150 Sekunden</h2>
             <a class="play-btn" id="playBtn"><span>&#9658;</span> Play</a>
-            <div class="verification-solution-number">140</div>
+            <div class="verification-solution-number">VID</div>
           </div>
           <div class="verification-solution-right right-45">
             <img
@@ -581,12 +618,18 @@
 
       // Get the button that opens the modal
       var btn = document.getElementById("playBtn");
+      var btnB = document.getElementById("playBtn2");
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
 
       // When the user clicks the button, open the modal
       btn.onclick = function () {
+        modal.style.display = "block";
+        document.getElementsByClassName("video")[0].play();
+      };
+
+      btnB.onclick = function () {
         modal.style.display = "block";
         document.getElementsByClassName("video")[0].play();
       };

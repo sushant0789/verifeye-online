@@ -337,15 +337,12 @@ h6 {
 .verification-solution-number,
 .kento-ident-number {
   color: #fff;
-  font-size: 600px;
-  bottom: -320px;
+  font-size: 500px;
+  bottom: -270px;
   left: 120px;
   font-weight: 800;
   position: absolute;
   z-index: 1;
-}
-.kento-ident-number {
-  left: 0;
 }
 .verification-solution-left,
 .kento-ident-right {
@@ -396,6 +393,25 @@ h6 {
 
 .verification-process-content {
   padding: 150px 120px;
+  position: relative;
+  .violet-box {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 1;
+    padding: 35px;
+    content: "";
+    background-color: #572680;
+  }
+  .yellow-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px;
+    content: "";
+    background-color: #fcd647;
+  }
   .title-h2 {
     width: 80%;
     line-height: 48px;
@@ -783,13 +799,13 @@ h6 {
   }
 }
 
-.who-we-are-left {
+.who-we-are-right {
   padding: 150px 100px 0;
   .title-h2 {
     width: 30%;
   }
 }
-.who-we-are-right,
+.who-we-are-left,
 .contact-top-right {
   img {
     width: 100%;
@@ -1005,7 +1021,7 @@ h6 {
   .advance-check-left,
   .innovative-product-features,
   .online-gaming-left,
-  .who-we-are-left,
+  .who-we-are-right,
   .contact-top-left,
   .kento-ident-right {
     padding: 80px 30px 30px;
@@ -1017,7 +1033,7 @@ h6 {
   .validation-security-features-right img,
   .save-data-right img,
   .online-gaming-right img,
-  .who-we-are-right img,
+  .who-we-are-left img,
   .contact-top-right img,
   .banner-left img {
     height: 100%;
@@ -1110,7 +1126,7 @@ h6 {
   .online-gaming-right-ul {
     left: 60px;
   }
-  .who-we-are-left {
+  .who-we-are-right {
     .title-h2 {
       width: 80%;
     }
@@ -1173,7 +1189,7 @@ h6 {
   .advance-check-left,
   .innovative-product-features,
   .online-gaming-left,
-  .who-we-are-left,
+  .who-we-are-right,
   .contact-top-left {
     padding: 80px 50px 30px;
   }
@@ -1184,7 +1200,7 @@ h6 {
   .validation-security-features-right img,
   .save-data-right img,
   .online-gaming-right img,
-  .who-we-are-right img,
+  .who-we-are-left img,
   .contact-top-right img,
   .banner-left img {
     height: 100%;
@@ -1240,7 +1256,7 @@ h6 {
     }
   }
   .save-data-left .title-h2,
-  .who-we-are-left .title-h2,
+  .who-we-are-right .title-h2,
   .save-data-left.german .title-h2 {
     width: 100%;
   }
@@ -1295,7 +1311,7 @@ h6 {
       width: 60%;
     }
   }
-  .who-we-are-left {
+  .who-we-are-right {
     padding-bottom: 0;
   }
   .contact-top-left .title-h5 {
@@ -1413,7 +1429,7 @@ h6 {
   .advance-check-left,
   .innovative-product-features,
   .online-gaming-left,
-  .who-we-are-left,
+  .who-we-are-right,
   .contact-top-left,
   .one-interface,
   .kento-ident-right {
@@ -1511,7 +1527,7 @@ h6 {
   }
   .validation-security-features-right,
   .save-data-left .title-h5,
-  .who-we-are-left .title-h5,
+  .who-we-are-right .title-h5,
   .contact-bottom-left,
   .contact-bottom-right {
     max-width: none;
@@ -1543,9 +1559,12 @@ h6 {
   .advance-check-ul li {
     padding: 0 0 0 10px;
   }
-  .innovative-product-features .title-h2,
-  .one-interface .title-h2 {
-    padding-top: 100px;
+  .innovative-product-features,
+  .one-interface,
+  .verification-process-content {
+    .title-h2 {
+      padding-top: 65px;
+    }
   }
   .one-interface {
     .three-veri h2 {
