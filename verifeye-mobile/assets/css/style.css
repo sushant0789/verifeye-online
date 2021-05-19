@@ -34,6 +34,11 @@ body {
   background-size: 1200px 849px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 #popup-wrap {
   background-color: rgba(43, 9, 70, 0.9);
   position: fixed;
@@ -45,13 +50,13 @@ body {
 }
 
 .popup {
-  max-width: 400px;
+  max-width: 280px;
   width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -200px;
-  margin-top: -200px;
+  margin-left: -140px;
+  margin-top: -300px;
   text-align: center;
 }
 
@@ -68,11 +73,114 @@ body {
   margin: 30px 0 0;
 }
 
+form fieldset {
+  display: none;
+  border: none;
+}
+
+form fieldset.active {
+  display: inline-block;
+  width: 100%;
+}
+
 .title-h4 {
   font-size: 22px;
+  padding: 0 0 30px;
+  margin: 0;
 }
 
 .title-h5 {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.title-h5 span {
+  font-weight: 400;
+}
+
+.steps-ul li {
+  list-style: none;
+  padding: 0 0 50px;
+}
+
+.steps-ul li h6 {
+  padding: 0 0 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.tick {
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: #0096a5;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.next-btn {
+  border: none;
+  background-color: #0096a5;
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.check-ul li {
+  display: inline-block;
+}
+
+.check-ul li label {
+  cursor: pointer;
+  font-size: 14px;
+  color: #22282f;
+  margin: 0;
+  padding: 7px 20px;
+  font-weight: normal;
+  background-color: #fff;
+  border: 1px solid #e2e9f3;
+  text-align: center;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.check-ul li [type="radio"] {
+  display: none;
+}
+
+.check-ul li label:hover,
+.check-ul li input[type="radio"]:checked + label {
+  background-color: #ffce6f;
+  border-color: #ffce6f;
+}
+
+.check-ul li label:hover::before,
+.check-ul li input[type="radio"]:checked + label::before {
+  background-color: #ffce6f;
+  opacity: 0.12;
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: -7px;
+  right: -7px;
+  top: -7px;
+  bottom: -7px;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */
