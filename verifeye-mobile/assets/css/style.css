@@ -56,7 +56,7 @@ ul {
   left: 50%;
   top: 50%;
   margin-left: -140px;
-  margin-top: -300px;
+  margin-top: -400px;
   text-align: center;
 }
 
@@ -140,24 +140,36 @@ form fieldset.active {
   cursor: pointer;
 }
 
-.check-ul li {
-  display: inline-block;
+.check-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0 110px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.check-ul li label {
+.check-ul li {
+  list-style: none;
+  width: 47%;
+}
+
+.check-ul label {
   cursor: pointer;
   font-size: 14px;
-  color: #22282f;
+  color: #000;
   margin: 0;
-  padding: 7px 20px;
+  padding: 40px 0;
   font-weight: normal;
   background-color: #fff;
-  border: 1px solid #e2e9f3;
+  border: 2px solid #999;
   text-align: center;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 10px;
   position: relative;
   z-index: 1;
+  display: block;
 }
 
 .check-ul li [type="radio"] {
@@ -166,21 +178,37 @@ form fieldset.active {
 
 .check-ul li label:hover,
 .check-ul li input[type="radio"]:checked + label {
-  background-color: #ffce6f;
-  border-color: #ffce6f;
+  background-color: #0096a5;
+  border-color: #0096a5;
+  color: #fff;
 }
 
-.check-ul li label:hover::before,
-.check-ul li input[type="radio"]:checked + label::before {
-  background-color: #ffce6f;
-  opacity: 0.12;
-  position: absolute;
-  z-index: -1;
-  content: "";
-  left: -7px;
-  right: -7px;
-  top: -7px;
-  bottom: -7px;
-  border-radius: 30px;
+.title-h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.camera-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.camera-ul li {
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px dashed #999;
+  padding: 60px 0;
+  margin: 30px 0;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
