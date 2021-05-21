@@ -305,3 +305,36 @@ form {
     }
   }
 }
+/*** Responsive for tablets ***/
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+  .popup {
+    margin-top: 0;
+    top: 50px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+  .popup {
+    margin-top: 0;
+    top: 50px;
+  }
+}
+/*** Responsive for mobile ***/
+@media only screen and (max-width: 767px) {
+  .popup {
+    margin-top: 0;
+    top: 20px;
+  }
+  .logo {
+    max-width: 150px;
+  }
+  .popup-main {
+    margin: 20px 0 0;
+  }
+  .title-h4 {
+    padding-bottom: 20px;
+  }
+  .camera-ul li {
+    height: 220px;
+    margin: 20px 0;
+  }
+}
