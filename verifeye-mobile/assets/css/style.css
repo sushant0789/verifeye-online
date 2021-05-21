@@ -50,12 +50,12 @@ ul {
 }
 
 .popup {
-  max-width: 290px;
+  max-width: 280px;
   width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -145px;
+  margin-left: -140px;
   margin-top: -400px;
   text-align: center;
 }
@@ -76,6 +76,8 @@ ul {
 form fieldset {
   display: none;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 form fieldset.active {
@@ -129,7 +131,8 @@ form fieldset.active {
   right: -10px;
 }
 
-.next-btn {
+.next-btn,
+.close-btn {
   border: none;
   background-color: #0096a5;
   width: 100%;
@@ -184,7 +187,7 @@ form fieldset.active {
 }
 
 .title-h6 {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -240,5 +243,75 @@ form fieldset.active {
 
 .input-box:focus, .input-box:active {
   outline: none;
+}
+
+.completed {
+  background-color: #e5f4f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 220px;
+  margin: 30px 0;
+  border-radius: 50%;
+}
+
+.completed .first {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #aedde2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.completed .second {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #0197a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.completed .third {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tick-last {
+  color: #fff;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
