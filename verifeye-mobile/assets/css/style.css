@@ -110,7 +110,9 @@ form fieldset.active {
   display: inline-block;
 }
 
-.tick {
+.tick,
+.tick2,
+.tick3 {
   font-size: 18px;
   border-radius: 50px;
   background-color: #0096a5;
@@ -258,7 +260,7 @@ form fieldset.active {
           align-items: center;
   width: 220px;
   height: 220px;
-  margin: 30px 0;
+  margin: 20px 0 50px 0;
   border-radius: 50%;
 }
 
@@ -313,5 +315,90 @@ form fieldset.active {
 .tick-last {
   color: #fff;
   font-size: 18px;
+}
+
+.konto-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.konto-ul li {
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border-radius: 10px;
+}
+
+.konto-ul h6 {
+  position: relative;
+  display: inline-block;
+}
+
+.fts-logo {
+  text-align: right;
+  padding: 20px 0 20px;
+}
+
+.fts-logo img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.reference-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.reference-ul li {
+  list-style: none;
+  padding: 0 0 20px;
+  font-size: 14px;
+}
+
+.reference-ul li label {
+  text-decoration: underline;
+  padding: 0 0 5px;
+  display: block;
+}
+
+.reference-ul li .terms {
+  display: inline-block;
+  position: relative;
+}
+
+.reference-ul li .terms input {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.reference-ul li .terms label {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 0 0 25px;
 }
 /*# sourceMappingURL=style.css.map */

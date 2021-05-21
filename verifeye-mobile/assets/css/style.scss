@@ -104,7 +104,9 @@ form {
     }
   }
 }
-.tick {
+.tick,
+.tick2,
+.tick3 {
   font-size: 18px;
   border-radius: 50px;
   background-color: #0096a5;
@@ -213,7 +215,7 @@ form {
   align-items: center;
   width: 220px;
   height: 220px;
-  margin: 30px 0;
+  margin: 20px 0 50px 0;
   border-radius: 50%;
   .first {
     width: 160px;
@@ -246,4 +248,60 @@ form {
 .tick-last {
   color: #fff;
   font-size: 18px;
+}
+.konto-ul {
+  display: flex;
+  flex-direction: column;
+  li {
+    list-style: none;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    border-radius: 10px;
+  }
+  h6 {
+    position: relative;
+    display: inline-block;
+  }
+}
+.fts-logo {
+  text-align: right;
+  padding: 20px 0 20px;
+  img {
+    width: 100%;
+    max-width: 100px;
+  }
+}
+.reference-ul {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  li {
+    list-style: none;
+    padding: 0 0 20px;
+    font-size: 14px;
+    label {
+      text-decoration: underline;
+      padding: 0 0 5px;
+      display: block;
+    }
+    .terms {
+      display: inline-block;
+      position: relative;
+      input {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      label {
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0 0 0 25px;
+      }
+    }
+  }
 }

@@ -1,8 +1,10 @@
 $(document).ready(function () {
     // Hide the div
-    $(".tick").hide();
+    $(".tick, .tick2, .tick3").hide();
     // Show the div after 5s
     $(".tick").delay(3000).fadeIn(300);
+    $(".tick2").delay(4000).fadeIn(300);
+    $(".tick3").delay(5000).fadeIn(300);
   });
 
   $(document).on("click", ".next-btn", function() {
