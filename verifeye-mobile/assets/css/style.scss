@@ -324,6 +324,9 @@ form {
 }
 /*** Responsive for mobile ***/
 @media only screen and (max-width: 767px) {
+  body {
+    background-position: 0 0;
+  }
   .popup {
     margin-top: 0;
     top: 20px;
