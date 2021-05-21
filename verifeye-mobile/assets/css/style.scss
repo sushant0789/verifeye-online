@@ -84,7 +84,6 @@ form {
 
 .title-h4 {
   font-size: 22px;
-  padding: 0 0 30px;
   margin: 0;
 }
 .title-h5 {
@@ -94,11 +93,14 @@ form {
   }
 }
 .steps-ul {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   li {
     list-style: none;
-    padding: 0 0 50px;
     h6 {
-      padding: 0 0 20px;
+      padding: 0 0 10px;
       position: relative;
       display: inline-block;
     }
@@ -169,6 +171,7 @@ form {
 .title-h6 {
   font-size: 13px;
   font-weight: 400;
+  padding: 20px 0 0;
 }
 .camera-ul {
   display: flex;
@@ -280,6 +283,7 @@ form {
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding: 20px 0 0;
   li {
     list-style: none;
     padding: 0 0 20px;
@@ -329,9 +333,6 @@ form {
   }
   .popup-main {
     margin: 20px 0 0;
-  }
-  .title-h4 {
-    padding-bottom: 20px;
   }
   .camera-ul li {
     height: 220px;

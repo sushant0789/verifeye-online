@@ -87,7 +87,6 @@ form fieldset.active {
 
 .title-h4 {
   font-size: 22px;
-  padding: 0 0 30px;
   margin: 0;
 }
 
@@ -99,13 +98,25 @@ form fieldset.active {
   font-weight: 400;
 }
 
+.steps-ul {
+  height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .steps-ul li {
   list-style: none;
-  padding: 0 0 50px;
 }
 
 .steps-ul li h6 {
-  padding: 0 0 20px;
+  padding: 0 0 10px;
   position: relative;
   display: inline-block;
 }
@@ -191,6 +202,7 @@ form fieldset.active {
 .title-h6 {
   font-size: 13px;
   font-weight: 400;
+  padding: 20px 0 0;
 }
 
 .camera-ul {
@@ -371,6 +383,7 @@ form fieldset.active {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  padding: 20px 0 0;
 }
 
 .reference-ul li {
@@ -428,9 +441,6 @@ form fieldset.active {
   }
   .popup-main {
     margin: 20px 0 0;
-  }
-  .title-h4 {
-    padding-bottom: 20px;
   }
   .camera-ul li {
     height: 220px;
