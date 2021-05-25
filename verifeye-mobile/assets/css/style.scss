@@ -31,8 +31,6 @@ body {
   font-family: "Rockwell";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(../images/bg.jpg) fixed center 0 no-repeat;
-  background-size: 1200px 849px;
 }
 ul {
   padding: 0;
@@ -40,7 +38,7 @@ ul {
 }
 
 #popup-wrap {
-  background-color: rgba($color: #2b0946, $alpha: 0.9);
+  background-color: #2b0946;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -103,6 +101,9 @@ form {
       padding: 0 0 10px;
       position: relative;
       display: inline-block;
+      img {
+        max-width: 50px;
+      }
     }
   }
 }
@@ -191,6 +192,9 @@ form {
   h6 {
     position: relative;
     display: inline-block;
+    img {
+      max-width: 140px;
+    }
   }
 }
 .otp-ul {

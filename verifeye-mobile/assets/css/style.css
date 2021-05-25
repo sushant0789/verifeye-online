@@ -30,8 +30,6 @@ body {
   font-family: "Rockwell";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(../images/bg.jpg) fixed center 0 no-repeat;
-  background-size: 1200px 849px;
 }
 
 ul {
@@ -40,7 +38,7 @@ ul {
 }
 
 #popup-wrap {
-  background-color: rgba(43, 9, 70, 0.9);
+  background-color: #2b0946;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -119,6 +117,10 @@ form fieldset.active {
   padding: 0 0 10px;
   position: relative;
   display: inline-block;
+}
+
+.steps-ul li h6 img {
+  max-width: 50px;
 }
 
 .tick,
@@ -236,6 +238,10 @@ form fieldset.active {
 .camera-ul h6 {
   position: relative;
   display: inline-block;
+}
+
+.camera-ul h6 img {
+  max-width: 140px;
 }
 
 .otp-ul {
