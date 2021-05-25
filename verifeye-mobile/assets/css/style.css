@@ -67,7 +67,7 @@ ul {
   border-radius: 10px;
   max-width: 400px;
   width: 100%;
-  padding: 30px;
+  padding: 20px 30px;
   margin: 30px 0 0;
 }
 
@@ -86,6 +86,16 @@ form fieldset.active {
 .title-h4 {
   font-size: 22px;
   margin: 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .title-h5 {
@@ -162,7 +172,7 @@ form fieldset.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 80px 0 110px 0;
+  padding: 120px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -205,6 +215,16 @@ form fieldset.active {
   font-size: 13px;
   font-weight: 400;
   padding: 20px 0 0;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .camera-ul {
@@ -230,7 +250,7 @@ form fieldset.active {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  height: 240px;
+  height: 215px;
   margin: 30px 0;
   border-radius: 10px;
 }
@@ -242,11 +262,21 @@ form fieldset.active {
 
 .camera-ul h6 img {
   max-width: 140px;
+  max-height: 140px;
 }
 
 .otp-ul {
-  display: block;
-  padding: 50px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 275px;
+  width: 100%;
 }
 
 .otp-ul li {
@@ -278,7 +308,7 @@ form fieldset.active {
           align-items: center;
   width: 220px;
   height: 220px;
-  margin: 50px 0;
+  margin: 60px 0;
   border-radius: 50%;
 }
 
@@ -343,6 +373,10 @@ form fieldset.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 210px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .konto-ul li {
@@ -354,14 +388,12 @@ form fieldset.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  padding: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
 }
 
@@ -389,7 +421,7 @@ form fieldset.active {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
-  padding: 20px 0 0;
+  height: 275px;
 }
 
 .reference-ul li {

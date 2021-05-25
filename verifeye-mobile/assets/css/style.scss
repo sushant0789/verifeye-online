@@ -64,7 +64,7 @@ ul {
   border-radius: 10px;
   max-width: 400px;
   width: 100%;
-  padding: 30px;
+  padding: 20px 30px;
   margin: 30px 0 0;
 }
 form {
@@ -83,6 +83,10 @@ form {
 .title-h4 {
   font-size: 22px;
   margin: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .title-h5 {
   font-size: 14px;
@@ -136,7 +140,7 @@ form {
 }
 .check-ul {
   display: flex;
-  padding: 80px 0 110px 0;
+  padding: 120px 0;
   justify-content: space-between;
   li {
     list-style: none;
@@ -173,6 +177,10 @@ form {
   font-size: 13px;
   font-weight: 400;
   padding: 20px 0 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .camera-ul {
   display: flex;
@@ -185,7 +193,7 @@ form {
     border: 1px dashed #999;
     display: flex;
     align-items: center;
-    height: 240px;
+    height: 215px;
     margin: 30px 0;
     border-radius: 10px;
   }
@@ -194,12 +202,16 @@ form {
     display: inline-block;
     img {
       max-width: 140px;
+      max-height: 140px;
     }
   }
 }
 .otp-ul {
-  display: block;
-  padding: 50px 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 275px;
+  width: 100%;
   li {
     list-style: none;
   }
@@ -222,7 +234,7 @@ form {
   align-items: center;
   width: 220px;
   height: 220px;
-  margin: 50px 0;
+  margin: 60px 0;
   border-radius: 50%;
   .first {
     width: 160px;
@@ -259,15 +271,15 @@ form {
 .konto-ul {
   display: flex;
   flex-direction: column;
+  height: 210px;
+  align-items: center;
   li {
     list-style: none;
     flex: 1;
     width: 100%;
     justify-content: center;
-    align-items: center;
     display: flex;
     align-items: center;
-    padding: 30px 0;
     border-radius: 10px;
   }
   h6 {
@@ -287,7 +299,7 @@ form {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 20px 0 0;
+  height: 275px;
   li {
     list-style: none;
     padding: 0 0 20px;
