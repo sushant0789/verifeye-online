@@ -99,12 +99,16 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 0 0 10px 0;
   li {
     list-style: none;
     h6 {
-      padding: 0 0 10px;
+      padding: 0 0 5px;
       position: relative;
       display: inline-block;
+      &.selfie {
+        margin: 0 0 0 -15px;
+      }
       img {
         max-width: 50px;
       }
@@ -200,6 +204,9 @@ form {
   h6 {
     position: relative;
     display: inline-block;
+    &.selfie {
+      margin: 0 0 0 -15px;
+    }
     img {
       max-width: 140px;
       max-height: 140px;
@@ -310,7 +317,7 @@ form {
     font-size: 14px;
     label {
       text-decoration: underline;
-      padding: 0 0 5px;
+      padding: 0 0 8px;
       display: block;
     }
     .terms {
@@ -326,6 +333,20 @@ form {
         text-decoration: none;
         padding: 0 0 0 25px;
       }
+    }
+    select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -o-appearance: none;
+      background: url(../images/dropdown.png) 92% center no-repeat;
+      display: block;
+      text-indent: 0.01px;
+      border: 1px solid #999;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 12px 15px;
     }
   }
 }
