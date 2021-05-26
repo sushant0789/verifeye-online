@@ -270,21 +270,14 @@ form fieldset.active {
 }
 
 .otp-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 275px;
   width: 100%;
 }
 
 .otp-ul li {
   list-style: none;
+  width: 100%;
+  padding: 30px 0 0;
 }
 
 .input-box {
@@ -424,8 +417,12 @@ form fieldset.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: left;
   height: 275px;
+  padding: 15px 0;
 }
 
 .reference-ul li {
