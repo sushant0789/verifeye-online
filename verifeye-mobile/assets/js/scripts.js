@@ -25,8 +25,8 @@ $(document).ready(function () {
 
   // CAMERA SETTINGS.
   Webcam.set({
-    width: 212,
-    height: 212,
+    width: 210,
+    height: 210,
     image_format: 'jpeg',
     jpeg_quality: 100
 });
