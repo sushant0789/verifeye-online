@@ -22,3 +22,20 @@ $(document).ready(function () {
       .prevAll("li.is-active")
       .addClass("is-complete");
   });
+
+  // CAMERA SETTINGS.
+  Webcam.set({
+    width: 212,
+    height: 212,
+    image_format: 'jpeg',
+    jpeg_quality: 100
+});
+Webcam.attach('#camera');
+
+// SHOW THE SNAPSHOT.
+takeSnapShot = function () {
+    Webcam.snap(function (data_uri) {
+        document.getElementById('snapShot').innerHTML = 
+            '<img src="' + data_uri + '" width="70px" height="50px" />';
+    });
+}
