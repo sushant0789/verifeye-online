@@ -300,7 +300,7 @@ form fieldset.active {
   -moz-appearance: none;
   -webkit-appearance: none;
   -o-appearance: none;
-  background: url(../images/dropdown.png) 85% center no-repeat;
+  background: url(../images/dropdown.png) 88% center no-repeat;
   display: block;
   text-indent: 0.01px;
   border-left: 1px solid #999;
