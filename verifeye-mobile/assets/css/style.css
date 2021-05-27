@@ -289,11 +289,29 @@ form fieldset.active {
   padding: 30px 0 0;
 }
 
-.otp-ul li.mobile::before {
-  content: "+49";
-  position: absolute;
-  padding: 13px 0 0 12px;
-  z-index: 1;
+.otp-ul li.mobile {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.otp-ul li.mobile select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  background: url(../images/dropdown.png) 85% center no-repeat;
+  display: block;
+  text-indent: 0.01px;
+  border-left: 1px solid #999;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  width: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 12px 5px;
+  border-radius: 10px 0 0 10px;
 }
 
 .input-box {
@@ -310,7 +328,9 @@ form fieldset.active {
 }
 
 .otp-ul li.mobile .input-box {
-  padding-left: 45px;
+  text-align: left;
+  width: 70%;
+  border-radius: 0 10px 10px 0;
 }
 
 .completed {
